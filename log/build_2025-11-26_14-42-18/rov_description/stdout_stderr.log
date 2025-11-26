@@ -1,0 +1,73 @@
+running egg_info
+creating ../../build/rov_description/rov_description.egg-info
+writing ../../build/rov_description/rov_description.egg-info/PKG-INFO
+writing dependency_links to ../../build/rov_description/rov_description.egg-info/dependency_links.txt
+writing requirements to ../../build/rov_description/rov_description.egg-info/requires.txt
+writing top-level names to ../../build/rov_description/rov_description.egg-info/top_level.txt
+writing manifest file '../../build/rov_description/rov_description.egg-info/SOURCES.txt'
+reading manifest file '../../build/rov_description/rov_description.egg-info/SOURCES.txt'
+writing manifest file '../../build/rov_description/rov_description.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/odinroast/Desktop/MROV-ROV-SIM/build/rov_description/build/lib/rov_description
+copying rov_description/__init__.py -> /home/odinroast/Desktop/MROV-ROV-SIM/build/rov_description/build/lib/rov_description
+running install
+running install_lib
+creating /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/lib/python3.10/site-packages/rov_description
+copying /home/odinroast/Desktop/MROV-ROV-SIM/build/rov_description/build/lib/rov_description/__init__.py -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/lib/python3.10/site-packages/rov_description
+byte-compiling /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/lib/python3.10/site-packages/rov_description/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/ament_index/resource_index/packages
+copying resource/rov_description -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/ament_index/resource_index/packages
+copying package.xml -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description
+creating /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/launch
+copying launch/display.launch.py -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/launch
+copying launch/gazebo.launch.py -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/launch
+creating /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/urdf
+copying urdf/rov.gazebo -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/urdf
+copying urdf/rov.xacro -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/urdf
+copying urdf/rov.trans -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/urdf
+copying urdf/materials.xacro -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/urdf
+creating /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/PillowBlockMount_v1_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/Ebox_v1_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/TopPlate_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/propbackleft_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/T200_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/propbackright_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/propfrontright_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/T200_6.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/Handles_2.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/Rotation_ArmBasePlate_v1_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/proptopbackright_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/VerticalThrusterSupportBeams_2.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/T200_2.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/left_claw_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/shoulder_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/right_claw_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/wrist_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/elbow_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/Rotation_ArmBasePlate_v1__1__1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/PillowBlockMount_v1__1__1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/Handles_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/VerticalThrusterSupportBeams_4.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/T200_7.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/T200_5.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/T200_8.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/propfrontleft_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/proptopfrontleft_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/proptopfrontright_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/VerticalThrusterSupportBeams_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/T200_3.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/VerticalThrusterSupportBeams_3.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/proptopbackleft_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/V4B_SupportPlate_v1_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/T200_4.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/base_link.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+copying meshes/basefootprintobject_1.stl -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes
+creating /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/config
+copying config/display.rviz -> /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/share/rov_description/config
+running install_egg_info
+Copying ../../build/rov_description/rov_description.egg-info to /home/odinroast/Desktop/MROV-ROV-SIM/install/rov_description/lib/python3.10/site-packages/rov_description-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/odinroast/Desktop/MROV-ROV-SIM/build/rov_description/install.log'
