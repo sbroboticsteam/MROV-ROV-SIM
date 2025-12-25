@@ -25,6 +25,7 @@ setup(
     license='TODO: License declaration',
     entry_points={
         'console_scripts': [
+            'imufakepub = teleoparm_description.imu_fake_pub:main',
         ],
     },
 )
