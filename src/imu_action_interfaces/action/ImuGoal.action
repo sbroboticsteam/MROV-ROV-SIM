@@ -1,0 +1,13 @@
+# Request
+float64 duration
+geometry_msgs/Quaternion goal_orientation
+string imu_name
+---
+# Result
+bool reached
+string message
+geometry_msgs/Quaternion final_orientation
+---
+# Feedback
+float64 progress  # Number from 0.0 to 1.0 to indicate progress of rotation
+geometry_msgs/Quaternion current_orientation
