@@ -1,7 +1,6 @@
 # Request
 float64 duration
 geometry_msgs/Quaternion goal_orientation
-string imu_name
 ---
 # Result
 bool reached
