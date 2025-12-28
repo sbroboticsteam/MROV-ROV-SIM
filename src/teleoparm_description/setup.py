@@ -26,6 +26,7 @@ setup(
     entry_points={
         'console_scripts': [
             'imufakepub = teleoparm_description.imu_fake_pub:main',
+            'armcontroller = teleoparm_description.arm_controller:main',
         ],
     },
 )
