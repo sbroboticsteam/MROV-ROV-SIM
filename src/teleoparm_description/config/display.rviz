@@ -62,22 +62,12 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        back_motor_left_2:
+        arm_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        back_motor_right_2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        back_wheel_left_2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        back_wheel_right_2:
+        armimu_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -87,26 +77,78 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        front_motor_left_2:
+        chestimu_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        front_motor_right_2:
+        elbow_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        front_wheel_left_2:
+        elbow_virtual_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        elbow_virtual_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        elbowimu_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        front_wheel_right_2:
+        imumount_v2_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        imumount_v2__1__1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        imumount_v2__2__1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        imumount_v2__3__1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        shldr_virtual_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        shldr_virtual_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        wrist_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wrist_virtual_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        wrist_virtual_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        wristimu_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Mass Properties:
+        Inertia: false
+        Mass: false
       Name: RobotModel
       TF Prefix: ""
       Update Interval: 0
@@ -117,23 +159,43 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        back_motor_left_2:
+        arm_1:
           Value: true
-        back_motor_right_2:
-          Value: true
-        back_wheel_left_2:
-          Value: true
-        back_wheel_right_2:
+        armimu_1:
           Value: true
         base_link:
           Value: true
-        front_motor_left_2:
+        chestimu_1:
           Value: true
-        front_motor_right_2:
+        elbow_1:
           Value: true
-        front_wheel_left_2:
+        elbow_virtual_1:
           Value: true
-        front_wheel_right_2:
+        elbow_virtual_2:
+          Value: true
+        elbowimu_1:
+          Value: true
+        imumount_v2_1:
+          Value: true
+        imumount_v2__1__1:
+          Value: true
+        imumount_v2__2__1:
+          Value: true
+        imumount_v2__3__1:
+          Value: true
+        shldr_virtual_1:
+          Value: true
+        shldr_virtual_2:
+          Value: true
+        world:
+          Value: true
+        wrist_1:
+          Value: true
+        wrist_virtual_1:
+          Value: true
+        wrist_virtual_2:
+          Value: true
+        wristimu_1:
           Value: true
       Marker Scale: 0.5
       Name: TF
@@ -141,25 +203,35 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        base_link:
-          back_motor_right_2:
-            back_wheel_right_2:
-              {}
-          back_wheel_left_2:
-            back_motor_left_2:
-              {}
-          front_motor_left_2:
-            front_wheel_left_2:
-              {}
-          front_motor_right_2:
-            front_wheel_right_2:
-              {}
+        world:
+          base_link:
+            imumount_v2_1:
+              chestimu_1:
+                {}
+            shldr_virtual_1:
+              shldr_virtual_2:
+                arm_1:
+                  elbow_virtual_1:
+                    elbow_virtual_2:
+                      elbow_1:
+                        imumount_v2__2__1:
+                          elbowimu_1:
+                            {}
+                        wrist_virtual_1:
+                          wrist_virtual_2:
+                            wrist_1:
+                              imumount_v2__3__1:
+                                wristimu_1:
+                                  {}
+                  imumount_v2__1__1:
+                    armimu_1:
+                      {}
       Update Interval: 0
       Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: base_link
+    Fixed Frame: world
     Frame Rate: 30
   Name: root
   Tools:
@@ -171,6 +243,9 @@ Visualization Manager:
     - Class: rviz_default_plugins/Measure
       Line color: 128; 128; 0
     - Class: rviz_default_plugins/SetInitialPose
+      Covariance x: 0.25
+      Covariance y: 0.25
+      Covariance yaw: 0.06853891909122467
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -199,25 +274,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.8402727246284485
+      Distance: 2.8760294914245605
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0
-        Y: 0
-        Z: 0
+        X: -0.36970093846321106
+        Y: 0.22093823552131653
+        Z: 0.1186092421412468
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6097970008850098
+      Pitch: 0.2657215893268585
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.5103846192359924
+      Yaw: 0.9701455235481262
     Saved: ~
 Window Geometry:
   Displays:
