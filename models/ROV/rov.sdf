@@ -1,0 +1,1923 @@
+<sdf version='1.11'>
+  <model name='rov'>
+    <link name='base_link'>
+      <inertial>
+        <pose>-0.012274398827832669 -0.1021436480767573 -0.00078246893252773074 0 0 0</pose>
+        <mass>12.68850787117381</mass>
+        <inertia>
+          <ixx>0.60959565415770367</ixx>
+          <ixy>-0.0083894328460371662</ixy>
+          <ixz>-0.0011424031307071269</ixz>
+          <iyy>1.037048815423417</iyy>
+          <iyz>0.0011227035207166309</iyz>
+          <izz>0.61669336643370865</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/base_link.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__VerticalThrusterSupportBeams_2_collision_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/VerticalThrusterSupportBeams_2.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__T200_7_collision_2'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_7.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__T200_3_collision_3'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_3.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__VerticalThrusterSupportBeams_1_collision_4'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/VerticalThrusterSupportBeams_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__TopPlate_1_collision_5'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/TopPlate_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__Handles_2_collision_6'>
+        <pose>2.775557561562891e-17 0 -5.5511151231257827e-17 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/Handles_2.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__Handles_1_collision_7'>
+        <pose>2.775557561562891e-17 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/Handles_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__V4B_SupportPlate_v1_1_collision_8'>
+        <pose>5.5511151231257827e-17 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/V4B_SupportPlate_v1_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__T200_1_collision_9'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__T200_2_collision_10'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_2.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__Ebox_v1_1_collision_11'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/Ebox_v1_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__Rotation_ArmBasePlate_v1_1_collision_12'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/Rotation_ArmBasePlate_v1_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__PillowBlockMount_v1_1_collision_13'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/PillowBlockMount_v1_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__VerticalThrusterSupportBeams_4_collision_14'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/VerticalThrusterSupportBeams_4.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__T200_6_collision_15'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_6.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__T200_5_collision_16'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_5.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__Rotation_ArmBasePlate_v1__1__1_collision_17'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/Rotation_ArmBasePlate_v1__1__1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__PillowBlockMount_v1__1__1_collision_18'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/PillowBlockMount_v1__1__1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__VerticalThrusterSupportBeams_3_collision_19'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/VerticalThrusterSupportBeams_3.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__T200_8_collision_20'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_8.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__T200_4_collision_21'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_4.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__basefootprintobject_1_collision_22'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/basefootprintobject_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/base_link.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__VerticalThrusterSupportBeams_2_visual_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/VerticalThrusterSupportBeams_2.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__T200_7_visual_2'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_7.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__T200_3_visual_3'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_3.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__VerticalThrusterSupportBeams_1_visual_4'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/VerticalThrusterSupportBeams_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__TopPlate_1_visual_5'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/TopPlate_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__Handles_2_visual_6'>
+        <pose>2.775557561562891e-17 0 -5.5511151231257827e-17 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/Handles_2.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__Handles_1_visual_7'>
+        <pose>2.775557561562891e-17 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/Handles_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__V4B_SupportPlate_v1_1_visual_8'>
+        <pose>5.5511151231257827e-17 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/V4B_SupportPlate_v1_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__T200_1_visual_9'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__T200_2_visual_10'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_2.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__Ebox_v1_1_visual_11'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/Ebox_v1_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__Rotation_ArmBasePlate_v1_1_visual_12'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/Rotation_ArmBasePlate_v1_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__PillowBlockMount_v1_1_visual_13'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/PillowBlockMount_v1_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__VerticalThrusterSupportBeams_4_visual_14'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/VerticalThrusterSupportBeams_4.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__T200_6_visual_15'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_6.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__T200_5_visual_16'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_5.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__Rotation_ArmBasePlate_v1__1__1_visual_17'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/Rotation_ArmBasePlate_v1__1__1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__PillowBlockMount_v1__1__1_visual_18'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/PillowBlockMount_v1__1__1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__VerticalThrusterSupportBeams_3_visual_19'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/VerticalThrusterSupportBeams_3.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__T200_8_visual_20'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_8.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__T200_4_visual_21'>
+        <pose>0 2.775557561562891e-17 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/T200_4.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__basefootprintobject_1_visual_22'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/basefootprintobject_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <self_collide>true</self_collide>
+      <gravity>true</gravity>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+      <self_collide>true</self_collide>
+    </link>
+    <joint name='frontrightpropjoint' type='revolute'>
+      <pose relative_to='base_link'>0.25585999999999998 -0.10199999999999999 0.30076399999999998 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>propfrontright_1</child>
+      <axis>
+        <xyz>0.70710700000000004 0 -0.70710700000000004</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='propfrontright_1'>
+      <pose relative_to='frontrightpropjoint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.01236878771037647 -3.2044554434673689e-06 -0.01236574673140284 0 0 0</pose>
+        <mass>0.0083263031723420436</mass>
+        <inertia>
+          <ixx>3.0000000000000001e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>-9.9999999999999995e-07</ixz>
+          <iyy>1.9999999999999999e-06</iyy>
+          <iyz>0</iyz>
+          <izz>3.0000000000000001e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='propfrontright_1_collision'>
+        <pose>-0.25585999999999998 0.10199999999999999 -0.30076399999999998 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/propfrontright_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='propfrontright_1_visual'>
+        <pose>-0.25585999999999998 0.10199999999999999 -0.30076399999999998 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/propfrontright_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <self_collide>true</self_collide>
+    </link>
+    <joint name='topfrontrightpropjoint' type='revolute'>
+      <pose relative_to='base_link'>0.20003499999999999 -0.076751999999999959 0.20003499999999999 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>proptopfrontright_1</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='proptopfrontright_1'>
+      <pose relative_to='topfrontrightpropjoint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>4.0657043116065772e-06 0.017490034130872249 -4.6608003942405501e-07 0 0 0</pose>
+        <mass>0.0083263031723420436</mass>
+        <inertia>
+          <ixx>1.9999999999999999e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>3.0000000000000001e-06</iyy>
+          <iyz>0</iyz>
+          <izz>1.9999999999999999e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='proptopfrontright_1_collision'>
+        <pose>-0.20003499999999999 0.076752000000000001 -0.20003499999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/proptopfrontright_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='proptopfrontright_1_visual'>
+        <pose>-0.20003499999999999 0.076752000000000001 -0.20003499999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/proptopfrontright_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <self_collide>true</self_collide>
+    </link>
+    <joint name='shoulderjoint' type='revolute'>
+      <pose relative_to='base_link'>0.28999999999999998 -0.10199999999999999 -0.014513 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>shoulder_1</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='shoulder_1'>
+      <pose relative_to='shoulderjoint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.094149468061629382 6.6531029505420558e-05 0.0028872548795484329 0 0 0</pose>
+        <mass>0.23816081829076921</mass>
+        <inertia>
+          <ixx>0.00025300000000000002</ixx>
+          <ixy>0</ixy>
+          <ixz>9.9999999999999995e-07</ixz>
+          <iyy>0.002317</iyy>
+          <iyz>-9.9999999999999995e-07</iyz>
+          <izz>0.0022200000000000002</izz>
+        </inertia>
+      </inertial>
+      <collision name='shoulder_1_collision'>
+        <pose>-0.28999999999999998 0.10199999999999999 0.014513 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/shoulder_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='shoulder_1_visual'>
+        <pose>-0.28999999999999998 0.10199999999999999 0.014513 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/shoulder_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <self_collide>true</self_collide>
+    </link>
+    <joint name='elbowjoint' type='revolute'>
+      <pose relative_to='shoulder_1'>-0.20749999999999999 0 -0.0041739999999999998 0 0 0</pose>
+      <parent>shoulder_1</parent>
+      <child>elbow_1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='elbow_1'>
+      <pose relative_to='elbowjoint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.036504021537288288 0.0010587831807864071 0.024711763155022361 0 0 0</pose>
+        <mass>0.038521930758269228</mass>
+        <inertia>
+          <ixx>2.9e-05</ixx>
+          <ixy>-1.9999999999999999e-06</ixy>
+          <ixz>0</ixz>
+          <iyy>4.0000000000000003e-05</iyy>
+          <iyz>0</iyz>
+          <izz>3.8999999999999999e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='elbow_1_collision'>
+        <pose>-0.082500000000000004 0.10199999999999999 0.018686999999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/elbow_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='elbow_1_visual'>
+        <pose>-0.082500000000000004 0.10199999999999999 0.018686999999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/elbow_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <self_collide>true</self_collide>
+    </link>
+    <joint name='wristjoint' type='revolute'>
+      <pose relative_to='elbow_1'>0.069000000000000006 0.0060000000000000001 0.024674999999999999 0 0 0</pose>
+      <parent>elbow_1</parent>
+      <child>wrist_1</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wrist_1'>
+      <pose relative_to='wristjoint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.020570162349985131 0.00082094908710335368 -8.3763972281827685e-05 0 0 0</pose>
+        <mass>0.016346422343594971</mass>
+        <inertia>
+          <ixx>3.9999999999999998e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>6.9999999999999999e-06</iyy>
+          <iyz>0</iyz>
+          <izz>5.0000000000000004e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='wrist_1_collision'>
+        <pose>-0.1515 0.096000000000000002 -0.0059880000000000003 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/wrist_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='wrist_1_visual'>
+        <pose>-0.1515 0.096000000000000002 -0.0059880000000000003 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/wrist_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <self_collide>true</self_collide>
+    </link>
+    <joint name='leftclawjoint' type='revolute'>
+      <pose relative_to='wrist_1'>0.025999999999999999 0.0080000000000000002 -0.01 0 0 0</pose>
+      <parent>wrist_1</parent>
+      <child>left_claw_1</child>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_claw_1'>
+      <pose relative_to='leftclawjoint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.083547604105613071 -0.005972879878576573 -0.010043597389812701 0 0 0</pose>
+        <mass>0.083758354496317119</mass>
+        <inertia>
+          <ixx>1.2999999999999999e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>-6.0000000000000002e-06</ixz>
+          <iyy>0.000195</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019000000000000001</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_claw_1_collision'>
+        <pose>-0.17749999999999999 0.087999999999999995 0.0040119999999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/left_claw_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='left_claw_1_visual'>
+        <pose>-0.17749999999999999 0.087999999999999995 0.0040119999999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/left_claw_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <self_collide>true</self_collide>
+    </link>
+    <joint name='rightclawjoint' type='revolute'>
+      <pose relative_to='wrist_1'>0.025999999999999999 0.0080000000000000002 0.01 0 0 0</pose>
+      <parent>wrist_1</parent>
+      <child>right_claw_1</child>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_claw_1'>
+      <pose relative_to='rightclawjoint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.075667749379889737 -0.0059640260689888666 0.0094955583591221186 0 0 0</pose>
+        <mass>0.079274929842872044</mass>
+        <inertia>
+          <ixx>1.2e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>3.9999999999999998e-06</ixz>
+          <iyy>0.000193</iyy>
+          <iyz>0</iyz>
+          <izz>0.00018799999999999999</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_claw_1_collision'>
+        <pose>-0.17749999999999999 0.087999999999999995 -0.015987999999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/right_claw_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='right_claw_1_visual'>
+        <pose>-0.17749999999999999 0.087999999999999995 -0.015987999999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/right_claw_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <self_collide>true</self_collide>
+    </link>
+    <joint name='backrightpropjoint' type='revolute'>
+      <pose relative_to='base_link'>-0.25585999999999998 -0.10199999999999999 0.30076399999999998 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>propbackright_1</child>
+      <axis>
+        <xyz>-0.70710700000000004 0 -0.70710700000000004</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='propbackright_1'>
+      <pose relative_to='backrightpropjoint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.012365898764221169 -3.2044554445498359e-06 -0.01236863567755175 0 0 0</pose>
+        <mass>0.0083263031723420436</mass>
+        <inertia>
+          <ixx>3.0000000000000001e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>9.9999999999999995e-07</ixz>
+          <iyy>1.9999999999999999e-06</iyy>
+          <iyz>0</iyz>
+          <izz>3.0000000000000001e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='propbackright_1_collision'>
+        <pose>0.25585999999999998 0.10199999999999999 -0.30076399999999998 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/propbackright_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='propbackright_1_visual'>
+        <pose>0.25585999999999998 0.10199999999999999 -0.30076399999999998 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/propbackright_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <self_collide>true</self_collide>
+    </link>
+    <joint name='topbackrightpropjoint' type='revolute'>
+      <pose relative_to='base_link'>-0.20003499999999999 -0.076751999999999959 0.20003499999999999 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>proptopbackright_1</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='proptopbackright_1'>
+      <pose relative_to='topbackrightpropjoint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>3.355026193196942e-06 0.0174900341308722 -4.6608003972936629e-07 0 0 0</pose>
+        <mass>0.0083263031723420436</mass>
+        <inertia>
+          <ixx>1.9999999999999999e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>3.0000000000000001e-06</iyy>
+          <iyz>0</iyz>
+          <izz>1.9999999999999999e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='proptopbackright_1_collision'>
+        <pose>0.20003499999999999 0.076752000000000001 -0.20003499999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/proptopbackright_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='proptopbackright_1_visual'>
+        <pose>0.20003499999999999 0.076752000000000001 -0.20003499999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/proptopbackright_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <self_collide>true</self_collide>
+    </link>
+    <joint name='backleftpropjoint' type='revolute'>
+      <pose relative_to='base_link'>-0.25585999999999998 -0.10199999999999999 -0.30076399999999998 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>propbackleft_1</child>
+      <axis>
+        <xyz>-0.70710700000000004 0 0.70710700000000004</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='propbackleft_1'>
+      <pose relative_to='backleftpropjoint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.01236878771037464 -3.2044554437726798e-06 0.01236574673140955 0 0 0</pose>
+        <mass>0.0083263031723420436</mass>
+        <inertia>
+          <ixx>3.0000000000000001e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>-9.9999999999999995e-07</ixz>
+          <iyy>1.9999999999999999e-06</iyy>
+          <iyz>0</iyz>
+          <izz>3.0000000000000001e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='propbackleft_1_collision'>
+        <pose>0.25585999999999998 0.10199999999999999 0.30076399999999998 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/propbackleft_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='propbackleft_1_visual'>
+        <pose>0.25585999999999998 0.10199999999999999 0.30076399999999998 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/propbackleft_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <self_collide>true</self_collide>
+    </link>
+    <joint name='topbackleftpropjoint' type='revolute'>
+      <pose relative_to='base_link'>-0.20003499999999999 -0.076751999999999959 -0.20003499999999999 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>proptopbackleft_1</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='proptopbackleft_1'>
+      <pose relative_to='topbackleftpropjoint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>3.3550261890058501e-06 0.01749003413087237 -1.1767581540034211e-06 0 0 0</pose>
+        <mass>0.0083263031723420436</mass>
+        <inertia>
+          <ixx>1.9999999999999999e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>3.0000000000000001e-06</iyy>
+          <iyz>0</iyz>
+          <izz>1.9999999999999999e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='proptopbackleft_1_collision'>
+        <pose>0.20003499999999999 0.076752000000000001 0.20003499999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/proptopbackleft_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='proptopbackleft_1_visual'>
+        <pose>0.20003499999999999 0.076752000000000001 0.20003499999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/proptopbackleft_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <self_collide>true</self_collide>
+    </link>
+    <joint name='frontleftpropjoint' type='revolute'>
+      <pose relative_to='base_link'>0.25585999999999998 -0.10199999999999999 -0.30076399999999998 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>propfrontleft_1</child>
+      <axis>
+        <xyz>0.70710700000000004 0 0.70710700000000004</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='propfrontleft_1'>
+      <pose relative_to='frontleftpropjoint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.012365898764223889 -3.2044554439669688e-06 0.01236863567755098 0 0 0</pose>
+        <mass>0.0083263031723420436</mass>
+        <inertia>
+          <ixx>3.0000000000000001e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>9.9999999999999995e-07</ixz>
+          <iyy>1.9999999999999999e-06</iyy>
+          <iyz>0</iyz>
+          <izz>3.0000000000000001e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='propfrontleft_1_collision'>
+        <pose>-0.25585999999999998 0.10199999999999999 0.30076399999999998 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/propfrontleft_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='propfrontleft_1_visual'>
+        <pose>-0.25585999999999998 0.10199999999999999 0.30076399999999998 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/propfrontleft_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <self_collide>true</self_collide>
+    </link>
+    <joint name='topfrontleftpropjoint' type='revolute'>
+      <pose relative_to='base_link'>0.20003499999999999 -0.076751999999999959 -0.20003499999999999 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>proptopfrontleft_1</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='proptopfrontleft_1'>
+      <pose relative_to='topfrontleftpropjoint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>4.065704307693041e-06 0.017490034130872419 -1.1767581619970271e-06 0 0 0</pose>
+        <mass>0.0083263031723420436</mass>
+        <inertia>
+          <ixx>1.9999999999999999e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>3.0000000000000001e-06</iyy>
+          <iyz>0</iyz>
+          <izz>1.9999999999999999e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='proptopfrontleft_1_collision'>
+        <pose>-0.20003499999999999 0.076752000000000001 0.20003499999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/proptopfrontleft_1.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.20000000000000001</mu>
+              <mu2>0.20000000000000001</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='proptopfrontleft_1_visual'>
+        <pose>-0.20003499999999999 0.076752000000000001 0.20003499999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/karamat/Projects/ROS/MROV-ROV-SIM/install/rov_description/share/rov_description/meshes/proptopfrontleft_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Silver</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+          <diffuse>0.875 0.875 0.875 1</diffuse>
+          <ambient>0.875 0.875 0.875 1</ambient>
+        </material>
+      </visual>
+      <self_collide>true</self_collide>
+    </link>
+    <!-- <plugin name='gz_ros2_control' filename='libgz_ros2_control-system.so'/> -->
+    <frame name='Rigid 43' attached_to='VerticalThrusterSupportBeams_2'>
+      <pose>0 0.1145 0 0 0 0</pose>
+    </frame>
+    <frame name='T200_7' attached_to='Rigid 43'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 44' attached_to='VerticalThrusterSupportBeams_2'>
+      <pose>-0.0089800000000000001 0.17150000000000001 -0.0089800000000000001 0 0 0</pose>
+    </frame>
+    <frame name='T200_3' attached_to='Rigid 44'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 1' attached_to='base_link'>
+      <pose>0.24366399999999999 -0.20699999999999999 0.24366399999999999 0 0 0</pose>
+    </frame>
+    <frame name='VerticalThrusterSupportBeams_2' attached_to='Rigid 1'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 17' attached_to='TopPlate_1'>
+      <pose>0.32966400000000001 0.0033500000000000001 -0.56166400000000005 0 0 0</pose>
+    </frame>
+    <frame name='Handles_2' attached_to='Rigid 17'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 18' attached_to='TopPlate_1'>
+      <pose>0.32966400000000001 0.0033500000000000001 0.074335999999999999 0 0 0</pose>
+    </frame>
+    <frame name='Handles_1' attached_to='Rigid 18'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 33' attached_to='TopPlate_1'>
+      <pose>0.53366400000000003 -0.0030000000000000001 -0.25500200000000001 0 0 0</pose>
+    </frame>
+    <frame name='V4B_SupportPlate_v1_1' attached_to='Rigid 33'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 40' attached_to='VerticalThrusterSupportBeams_1'>
+      <pose>0 0.20999999999999999 0 0 0 0</pose>
+    </frame>
+    <frame name='TopPlate_1' attached_to='Rigid 40'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 41' attached_to='VerticalThrusterSupportBeams_1'>
+      <pose>0 0.1145 0 0 0 0</pose>
+    </frame>
+    <frame name='T200_1' attached_to='Rigid 41'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 42' attached_to='VerticalThrusterSupportBeams_1'>
+      <pose>0.0089800000000000001 0.17150000000000001 -0.0089800000000000001 0 0 0</pose>
+    </frame>
+    <frame name='T200_2' attached_to='Rigid 42'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 2' attached_to='base_link'>
+      <pose>-0.24366399999999999 -0.20699999999999999 0.24366399999999999 0 0 0</pose>
+    </frame>
+    <frame name='VerticalThrusterSupportBeams_1' attached_to='Rigid 2'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 28' attached_to='base_link'>
+      <pose>-0.23350099999999999 -0.20399999999999999 -0.12499300000000001 0 0 0</pose>
+    </frame>
+    <frame name='Ebox_v1_1' attached_to='Rigid 28'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 31' attached_to='Rotation_ArmBasePlate_v1_1'>
+      <pose>-0.029000000000000001 0.128 0.0031749999999999999 0 0 0</pose>
+    </frame>
+    <frame name='PillowBlockMount_v1_1' attached_to='Rigid 31'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 29' attached_to='base_link'>
+      <pose>0.33500000000000002 -0.20399999999999999 -0.052861999999999999 0 0 0</pose>
+    </frame>
+    <frame name='Rotation_ArmBasePlate_v1_1' attached_to='Rigid 29'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 47' attached_to='VerticalThrusterSupportBeams_4'>
+      <pose>0 0.1145 0 0 0 0</pose>
+    </frame>
+    <frame name='T200_6' attached_to='Rigid 47'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 48' attached_to='VerticalThrusterSupportBeams_4'>
+      <pose>0.0089800000000000001 0.17150000000000001 0.0089800000000000001 0 0 0</pose>
+    </frame>
+    <frame name='T200_5' attached_to='Rigid 48'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 3' attached_to='base_link'>
+      <pose>-0.24366399999999999 -0.20699999999999999 -0.24366399999999999 0 0 0</pose>
+    </frame>
+    <frame name='VerticalThrusterSupportBeams_4' attached_to='Rigid 3'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 32' attached_to='Rotation_ArmBasePlate_v1__1__1'>
+      <pose>-0.060999999999999999 0.128 -0.0031749999999999999 0 0 0</pose>
+    </frame>
+    <frame name='PillowBlockMount_v1__1__1' attached_to='Rigid 32'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 30' attached_to='base_link'>
+      <pose>0.33500000000000002 -0.20399999999999999 0.052863 0 0 0</pose>
+    </frame>
+    <frame name='Rotation_ArmBasePlate_v1__1__1' attached_to='Rigid 30'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 45' attached_to='VerticalThrusterSupportBeams_3'>
+      <pose>0 0.1145 0 0 0 0</pose>
+    </frame>
+    <frame name='T200_8' attached_to='Rigid 45'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 46' attached_to='VerticalThrusterSupportBeams_3'>
+      <pose>-0.0089800000000000001 0.17150000000000001 0.0089800000000000001 0 0 0</pose>
+    </frame>
+    <frame name='T200_4' attached_to='Rigid 46'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='Rigid 4' attached_to='base_link'>
+      <pose>0.24366399999999999 -0.20699999999999999 -0.24366399999999999 0 0 0</pose>
+    </frame>
+    <frame name='VerticalThrusterSupportBeams_3' attached_to='Rigid 4'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='base_footprint' attached_to='base_link'>
+      <pose>0 -0.21035000000000001 0 0 0 0</pose>
+    </frame>
+    <frame name='basefootprintobject_1' attached_to='base_footprint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+  </model>
+</sdf>
