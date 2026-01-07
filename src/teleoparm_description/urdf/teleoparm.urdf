@@ -133,66 +133,6 @@
       </geometry>
     </collision>
   </link>
-  <link name="arm_1">
-    <inertial>
-      <origin rpy="0 0 0" xyz="-0.09419696889353948 0.048409979996170166 0.09419725322460598"/>
-      <mass value="10.223679855950772"/>
-      <inertia ixx="0.038111" ixy="0.012244" ixz="0.023505" iyy="0.055138" iyz="-0.012244" izz="0.038111"/>
-    </inertial>
-    <visual>
-      <origin rpy="0 0 0" xyz="-0.026568 -0.11628 0.026568"/>
-      <geometry>
-        <mesh filename="package://teleoparm_description/meshes/arm_1.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <material name="silver"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="-0.026568 -0.11628 0.026568"/>
-      <geometry>
-        <mesh filename="package://teleoparm_description/meshes/arm_1.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-    </collision>
-  </link>
-  <link name="elbow_1">
-    <inertial>
-      <origin rpy="0 0 0" xyz="-0.09266453430980306 0.04803747490879834 0.09248619733020741"/>
-      <mass value="8.504893880781394"/>
-      <inertia ixx="0.03526" ixy="0.012318" ixz="0.023511" iyy="0.052269" iyz="-0.012318" izz="0.03526"/>
-    </inertial>
-    <visual>
-      <origin rpy="0 0 0" xyz="0.14521 -0.205032 -0.145388"/>
-      <geometry>
-        <mesh filename="package://teleoparm_description/meshes/elbow_1.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <material name="silver"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0.14521 -0.205032 -0.145388"/>
-      <geometry>
-        <mesh filename="package://teleoparm_description/meshes/elbow_1.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-    </collision>
-  </link>
-  <link name="wrist_1">
-    <inertial>
-      <origin rpy="0 0 0" xyz="-0.06918842137588355 0.03553583259281068 0.06919330086166792"/>
-      <mass value="3.9800296871313745"/>
-      <inertia ixx="0.007748" ixy="0.002248" ixz="0.00293" iyy="0.012423" iyz="-0.002248" izz="0.007747"/>
-    </inertial>
-    <visual>
-      <origin rpy="0 0 0" xyz="0.331773 -0.301327 -0.331773"/>
-      <geometry>
-        <mesh filename="package://teleoparm_description/meshes/wrist_1.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <material name="silver"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0.331773 -0.301327 -0.331773"/>
-      <geometry>
-        <mesh filename="package://teleoparm_description/meshes/wrist_1.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-    </collision>
-  </link>
   <link name="imumount_v2_1">
     <inertial>
       <origin rpy="0 0 0" xyz="3.339349192721386e-07 0.0069197369262744 -3.342204968129203e-07"/>
@@ -215,19 +155,19 @@
   </link>
   <link name="imumount_v2__1__1">
     <inertial>
-      <origin rpy="0 0 0" xyz="-0.0016786051038998467 -0.006499573385011739 0.0016786627494195829"/>
+      <origin rpy="0 0 0" xyz="-0.006919465678812485 5.86783745454289e-07 3.2970043303132135e-08"/>
       <mass value="0.04523287359850269"/>
-      <inertia ixx="6e-06" ixy="1e-06" ixz="1e-06" iyy="1e-05" iyz="-1e-06" izz="6e-06"/>
+      <inertia ixx="1e-05" ixy="0.0" ixz="0.0" iyy="5e-06" iyz="0.0" izz="7e-06"/>
     </inertial>
     <visual>
-      <origin rpy="0 0 0" xyz="0.024511 -0.094757 -0.024534"/>
+      <origin rpy="0 0 0" xyz="0.016716 -0.190488 0.028268"/>
       <geometry>
         <mesh filename="package://teleoparm_description/meshes/imumount_v2__1__1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.024511 -0.094757 -0.024534"/>
+      <origin rpy="0 0 0" xyz="0.016716 -0.190488 0.028268"/>
       <geometry>
         <mesh filename="package://teleoparm_description/meshes/imumount_v2__1__1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -235,19 +175,19 @@
   </link>
   <link name="imumount_v2__2__1">
     <inertial>
-      <origin rpy="0 0 0" xyz="0.0016778641389492699 0.006500271204304187 -0.001678279430053664"/>
+      <origin rpy="0 0 0" xyz="0.006919508173724609 7.07822378265277e-07 -5.857178980994693e-07"/>
       <mass value="0.0452328735985027"/>
-      <inertia ixx="6e-06" ixy="1e-06" ixz="1e-06" iyy="1e-05" iyz="-1e-06" izz="6e-06"/>
+      <inertia ixx="1e-05" ixy="-0.0" ixz="0.0" iyy="5e-06" iyz="-0.0" izz="7e-06"/>
     </inertial>
     <visual>
-      <origin rpy="0 0 0" xyz="0.322799 -0.333323 -0.322782"/>
+      <origin rpy="0 0 0" xyz="-0.062697 -0.668541 0.028296"/>
       <geometry>
         <mesh filename="package://teleoparm_description/meshes/imumount_v2__2__1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.322799 -0.333323 -0.322782"/>
+      <origin rpy="0 0 0" xyz="-0.062697 -0.668541 0.028296"/>
       <geometry>
         <mesh filename="package://teleoparm_description/meshes/imumount_v2__2__1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -255,19 +195,19 @@
   </link>
   <link name="imumount_v2__3__1">
     <inertial>
-      <origin rpy="0 0 0" xyz="-0.0016785080101048844 -0.0065000214064088735 0.0016789220036388386"/>
+      <origin rpy="0 0 0" xyz="-0.00691946567881243 3.342204966116924e-07 5.626874578501528e-07"/>
       <mass value="0.0452328735985027"/>
-      <inertia ixx="6e-06" ixy="1e-06" ixz="1e-06" iyy="1e-05" iyz="-1e-06" izz="6e-06"/>
+      <inertia ixx="1e-05" ixy="0.0" ixz="0.0" iyy="5e-06" iyz="0.0" izz="7e-06"/>
     </inertial>
     <visual>
-      <origin rpy="0 0 0" xyz="0.42284 -0.328241 -0.423282"/>
+      <origin rpy="0 0 0" xyz="-0.009284 -0.8 0.027972"/>
       <geometry>
         <mesh filename="package://teleoparm_description/meshes/imumount_v2__3__1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.42284 -0.328241 -0.423282"/>
+      <origin rpy="0 0 0" xyz="-0.009284 -0.8 0.027972"/>
       <geometry>
         <mesh filename="package://teleoparm_description/meshes/imumount_v2__3__1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -295,19 +235,19 @@
   </link>
   <link name="armimu_1">
     <inertial>
-      <origin rpy="0 0 0" xyz="-3.207254554297989e-05 -0.0006590891662584669 3.265847350806747e-05"/>
+      <origin rpy="0 0 0" xyz="-0.000634728752538085 -0.00018297429674676846 -3.0058463838106286e-07"/>
       <mass value="0.005312650268367757"/>
-      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+      <inertia ixx="1e-06" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
     </inertial>
     <visual>
-      <origin rpy="0 0 0" xyz="0.027422 -0.083485 -0.027444"/>
+      <origin rpy="0 0 0" xyz="0.028716 -0.190488 0.028268"/>
       <geometry>
         <mesh filename="package://teleoparm_description/meshes/armimu_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.027422 -0.083485 -0.027444"/>
+      <origin rpy="0 0 0" xyz="0.028716 -0.190488 0.028268"/>
       <geometry>
         <mesh filename="package://teleoparm_description/meshes/armimu_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -315,19 +255,19 @@
   </link>
   <link name="elbowimu_1">
     <inertial>
-      <origin rpy="0 0 0" xyz="0.0002761782185269901 0.0005338651231845404 -0.00027612179207664456"/>
+      <origin rpy="0 0 0" xyz="0.0006347712474503303 -0.00018285325811384645 -2.5216321629384364e-07"/>
       <mass value="0.005312650268367757"/>
-      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+      <inertia ixx="1e-06" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
     </inertial>
     <visual>
-      <origin rpy="0 0 0" xyz="0.319889 -0.344595 -0.319872"/>
+      <origin rpy="0 0 0" xyz="-0.074697 -0.668541 0.028296"/>
       <geometry>
         <mesh filename="package://teleoparm_description/meshes/elbowimu_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.319889 -0.344595 -0.319872"/>
+      <origin rpy="0 0 0" xyz="-0.074697 -0.668541 0.028296"/>
       <geometry>
         <mesh filename="package://teleoparm_description/meshes/elbowimu_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -335,24 +275,124 @@
   </link>
   <link name="wristimu_1">
     <inertial>
-      <origin rpy="0 0 0" xyz="-3.197597889953441e-05 -0.0006595370486346952 3.191773900140804e-05"/>
+      <origin rpy="0 0 0" xyz="-0.0006347287525380269 -0.00018322645468393794 2.287679957552191e-07"/>
       <mass value="0.005312650268367757"/>
-      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+      <inertia ixx="1e-06" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
     </inertial>
     <visual>
-      <origin rpy="0 0 0" xyz="0.425751 -0.316969 -0.426193"/>
+      <origin rpy="0 0 0" xyz="0.002716 -0.8 0.027972"/>
       <geometry>
         <mesh filename="package://teleoparm_description/meshes/wristimu_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.425751 -0.316969 -0.426193"/>
+      <origin rpy="0 0 0" xyz="0.002716 -0.8 0.027972"/>
       <geometry>
         <mesh filename="package://teleoparm_description/meshes/wristimu_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
+  <link name="arm_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00021910399897615354 0.14173858615056883 -7.019503666175209e-08"/>
+      <mass value="10.223679855950772"/>
+      <inertia ixx="0.061527" ixy="-0.000182" ixz="0.0" iyy="0.008217" iyz="-0.0" izz="0.061616"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.028284 -0.13 0.028284"/>
+      <geometry>
+        <mesh filename="package://teleoparm_description/meshes/arm_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.028284 -0.13 0.028284"/>
+      <geometry>
+        <mesh filename="package://teleoparm_description/meshes/arm_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="elbow_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00021789727738510956 0.13945610053009078 -0.0001265095280190906"/>
+      <mass value="8.504893880781394"/>
+      <inertia ixx="0.058727" ixy="-0.000266" ixz="0.0" iyy="0.005291" iyz="0.0" izz="0.058771"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.028284 -0.388754 0.028158"/>
+      <geometry>
+        <mesh filename="package://teleoparm_description/meshes/elbow_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.028284 -0.388754 0.028158"/>
+      <geometry>
+        <mesh filename="package://teleoparm_description/meshes/elbow_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="wrist_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00018197406093689236 0.10410271217210565 3.1790700250715342e-06"/>
+      <mass value="3.9800296871313745"/>
+      <inertia ixx="0.013577" ixy="1.9e-05" ixz="0.0" iyy="0.003664" iyz="-0.0" izz="0.010677"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.028284 -0.6695 0.028284"/>
+      <geometry>
+        <mesh filename="package://teleoparm_description/meshes/wrist_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.028284 -0.6695 0.028284"/>
+      <geometry>
+        <mesh filename="package://teleoparm_description/meshes/wrist_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Rigid 6" type="fixed">
+    <origin rpy="0 0 0" xyz="0.109 0.135 -0.0425"/>
+    <parent link="base_link"/>
+    <child link="imumount_v2_1"/>
+  </joint>
+  <joint name="Rigid 7" type="fixed">
+    <origin rpy="0 0 0" xyz="-0.045 0.060488 1.6e-05"/>
+    <parent link="arm_1"/>
+    <child link="imumount_v2__1__1"/>
+  </joint>
+  <joint name="Rigid 8" type="fixed">
+    <origin rpy="0 0 0" xyz="0.034413 0.279787 -0.000138"/>
+    <parent link="elbow_1"/>
+    <child link="imumount_v2__2__1"/>
+  </joint>
+  <joint name="Rigid 9" type="fixed">
+    <origin rpy="0 0 0" xyz="-0.019 0.1305 0.000312"/>
+    <parent link="wrist_1"/>
+    <child link="imumount_v2__3__1"/>
+  </joint>
+  <joint name="chestimu" type="fixed">
+    <origin rpy="0 0 0" xyz="0.0 0.012 0.0"/>
+    <parent link="imumount_v2_1"/>
+    <child link="chestimu_1"/>
+  </joint>
+  <joint name="armimu" type="fixed">
+    <origin rpy="0 0 0" xyz="-0.012 0.0 0.0"/>
+    <parent link="imumount_v2__1__1"/>
+    <child link="armimu_1"/>
+  </joint>
+  <joint name="elbowimu" type="fixed">
+    <origin rpy="0 0 0" xyz="0.012 0.0 0.0"/>
+    <parent link="imumount_v2__2__1"/>
+    <child link="elbowimu_1"/>
+  </joint>
+  <joint name="wristimu" type="fixed">
+    <origin rpy="0 0 0" xyz="-0.012 0.0 0.0"/>
+    <parent link="imumount_v2__3__1"/>
+    <child link="wristimu_1"/>
+  </joint>
   <!-- Ball joint for shoulder: 3 DOF -->
   <link name="shldr_virtual_1">
     <inertial>
@@ -367,16 +407,16 @@
     </inertial>
   </link>
   <joint name="shldrevolute_roll" type="continuous">
-    <origin rpy="0 0 0" xyz="0.026568 0.11628 -0.026568"/>
+    <origin rpy="0 0 0" xyz="0.028284 0.13 -0.028284"/>
     <parent link="base_link"/>
     <child link="shldr_virtual_1"/>
-    <axis xyz="1 0 0"/>
+    <axis xyz="0 1 0"/>
   </joint>
   <joint name="shldrevolute_pitch" type="continuous">
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="shldr_virtual_1"/>
     <child link="shldr_virtual_2"/>
-    <axis xyz="0 1 0"/>
+    <axis xyz="1 0 0"/>
   </joint>
   <joint name="shldrevolute_yaw" type="continuous">
     <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -398,16 +438,16 @@
     </inertial>
   </link>
   <joint name="elbowrevolute_roll" type="continuous">
-    <origin rpy="0 0 0" xyz="-0.171778 0.088752 0.171956"/>
+    <origin rpy="0 0 0" xyz="0.0 0.258754 0.000126"/>
     <parent link="arm_1"/>
     <child link="elbow_virtual_1"/>
-    <axis xyz="1 0 0"/>
+    <axis xyz="0 1 0"/>
   </joint>
   <joint name="elbowrevolute_pitch" type="continuous">
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="elbow_virtual_1"/>
     <child link="elbow_virtual_2"/>
-    <axis xyz="0 1 0"/>
+    <axis xyz="1 0 0"/>
   </joint>
   <joint name="elbowrevolute_yaw" type="continuous">
     <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -429,61 +469,21 @@
     </inertial>
   </link>
   <joint name="wristrevolute_roll" type="continuous">
-    <origin rpy="0 0 0" xyz="-0.186563 0.096295 0.186385"/>
+    <origin rpy="0 0 0" xyz="0.0 0.280746 -0.000126"/>
     <parent link="elbow_1"/>
     <child link="wrist_virtual_1"/>
-    <axis xyz="1 0 0"/>
+    <axis xyz="0 1 0"/>
   </joint>
   <joint name="wristrevolute_pitch" type="continuous">
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="wrist_virtual_1"/>
     <child link="wrist_virtual_2"/>
-    <axis xyz="0 1 0"/>
+    <axis xyz="1 0 0"/>
   </joint>
   <joint name="wristrevolute_yaw" type="continuous">
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="wrist_virtual_2"/>
     <child link="wrist_1"/>
     <axis xyz="0 0 1"/>
-  </joint>
-  <joint name="Rigid 6" type="fixed">
-    <origin rpy="0 0 0" xyz="0.109 0.135 -0.0425"/>
-    <parent link="base_link"/>
-    <child link="imumount_v2_1"/>
-  </joint>
-  <joint name="Rigid 7" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.051079 -0.021523 0.051102"/>
-    <parent link="arm_1"/>
-    <child link="imumount_v2__1__1"/>
-  </joint>
-  <joint name="Rigid 8" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.177589 0.128291 0.177394"/>
-    <parent link="elbow_1"/>
-    <child link="imumount_v2__2__1"/>
-  </joint>
-  <joint name="Rigid 9" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.091067 0.026914 0.091509"/>
-    <parent link="wrist_1"/>
-    <child link="imumount_v2__3__1"/>
-  </joint>
-  <joint name="chestimu" type="fixed">
-    <origin rpy="0 0 0" xyz="0.0 0.012 0.0"/>
-    <parent link="imumount_v2_1"/>
-    <child link="chestimu_1"/>
-  </joint>
-  <joint name="armimu" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.002911 -0.011272 0.00291"/>
-    <parent link="imumount_v2__1__1"/>
-    <child link="armimu_1"/>
-  </joint>
-  <joint name="elbowimu" type="fixed">
-    <origin rpy="0 0 0" xyz="0.00291 0.011272 -0.00291"/>
-    <parent link="imumount_v2__2__1"/>
-    <child link="elbowimu_1"/>
-  </joint>
-  <joint name="wristimu" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.002911 -0.011272 0.002911"/>
-    <parent link="imumount_v2__3__1"/>
-    <child link="wristimu_1"/>
   </joint>
 </robot>
