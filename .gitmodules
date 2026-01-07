@@ -1,0 +1,3 @@
+[submodule "src/teleoparm_description/esp_project/teleop-arm-microros-publisher/components/micro_ros_espidf_component"]
+	path = src/teleoparm_description/esp_project/teleop-arm-microros-publisher/components/micro_ros_espidf_component
+	url = https://github.com/micro-ROS/micro_ros_espidf_component

@@ -1,0 +1,137 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403ce757
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1870
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcec
+load:0x403cc700,len:0x2ec8
+entry 0x403c9918
+[0;32mI (26) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Dec 31 2025 12:28:00[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (33) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1b970h (113008) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0002b998 vaddr=3fc9a300 size=04680h ( 18048) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8fb50h (588624) map[0m
+[0;32mI (233) esp_image: segment 3: paddr=000bfb78 vaddr=3fc9e980 size=00728h (  1832) load[0m
+[0;32mI (234) esp_image: segment 4: paddr=000c02a8 vaddr=40374000 size=161f8h ( 90616) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (279) cpu_start: Multicore app[0m
+[0;32mI (289) cpu_start: Pro cpu start user code[0m
+[0;32mI (289) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (289) cpu_start: Application information:[0m
+[0;32mI (292) cpu_start: Project name:     teleop-arm-microros-publisher[0m
+[0;32mI (299) cpu_start: App version:      4b25c04-dirty[0m
+[0;32mI (304) cpu_start: Compile time:     Dec 31 2025 12:27:56[0m
+[0;32mI (310) cpu_start: ELF file SHA256:  de00592e1...[0m
+[0;32mI (316) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (320) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (325) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (330) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (335) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (342) heap_init: At 3FCA57E8 len 00043F28 (271 KiB): RAM[0m
+[0;32mI (348) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (354) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (360) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (368) spi_flash: detected chip: generic[0m
+[0;32mI (371) spi_flash: flash io: dio[0m
+[0;32mI (376) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (382) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (390) main_task: Started on CPU0[0m
+[0;32mI (400) main_task: Calling app_main()[0m
+[0;32mI (420) wifi_station_netif: ESP_WIFI_MODE_STA[0m
+[0;32mI (420) pp: pp rom version: e7ae62f[0m
+[0;32mI (420) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (430) wifi:wifi driver task: 3fcafb6c, prio:23, stack:6656, core=0[0m
+[0;32mI (440) wifi:wifi firmware version: e851349[0m
+[0;32mI (440) wifi:wifi certification version: v7.0[0m
+[0;32mI (440) wifi:config NVS flash: enabled[0m
+[0;32mI (440) wifi:config nano formating: disabled[0m
+[0;32mI (440) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (450) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (450) wifi:Init management short buffer num: 32[0m
+[0;32mI (450) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (460) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (460) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (470) wifi:Init static rx buffer num: 10[0m
+[0;32mI (470) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (480) wifi_init: rx ba win: 6[0m
+[0;32mI (480) wifi_init: tcpip mbox: 32[0m
+[0;32mI (480) wifi_init: udp mbox: 6[0m
+[0;32mI (490) wifi_init: tcp mbox: 6[0m
+[0;32mI (490) wifi_init: tcp tx win: 5760[0m
+[0;32mI (490) wifi_init: tcp rx win: 5760[0m
+[0;32mI (500) wifi_init: tcp mss: 1440[0m
+[0;32mI (500) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (510) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (510) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (520) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (570) wifi:mode : sta (b8:f8:62:d7:8c:7c)[0m
+[0;32mI (570) wifi:enable tsf[0m
+[0;32mI (570) wifi_station_netif: wifi_init_sta finished.[0m
+[0;32mI (640) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (640) wifi:state: init -> auth (b0)[0m
+[0;32mI (650) wifi:state: auth -> assoc (0)[0m
+[0;32mI (650) wifi:Association refused temporarily time 292, comeback time 392 (TUs)[0m
+[0;32mI (1050) wifi:state: assoc -> assoc (0)[0m
+[1;31mE (1060) wifi:Association refused too many times, max allowed 1[0m
+[0;32mI (1060) wifi:state: assoc -> init (d010)[0m
+[0;32mI (1070) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1070) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (1070) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (1080) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1080) wifi:state: init -> auth (b0)[0m
+[0;32mI (1100) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1110) wifi:state: assoc -> run (10)[0m
+[0;32mI (1140) wifi:connected with NR-3, aid = 34, channel 1, BW20, bssid = 94:4e:5b:69:7c:61[0m
+[0;32mI (1140) wifi:security: WPA2-PSK, phy: bgn, rssi: -65[0m
+[0;32mI (1140) wifi:pm start, type: 1[0m
+
+[0;32mI (1150) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1150) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1170) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1180) wifi:<ba-add>idx:0 (ifx:0, 94:4e:5b:69:7c:61), tid:6, ssn:1, winSize:64[0m
+[0;32mI (2160) esp_netif_handlers: sta ip: 192.168.1.84, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2160) wifi_station_netif: got ip:192.168.1.84[0m
+[0;32mI (2160) wifi_station_netif: connected to ap SSID:NR-3 password:Radhi02@Nagi22[0m
+[0;32mI (2170) main_task: Returned from app_main()[0m
+[0;32mI (2170) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (2180) uart: queue free spaces: 20[0m
+[0;32mI (2180) uart: queue free spaces: 20[0m
+[0;32mI (2330) wifi:<ba-add>idx:1 (ifx:0, 94:4e:5b:69:7c:61), tid:0, ssn:1, winSize:64[0m
+[0;32mI (68670) wifi:state: run -> init (1c0)[0m
+[0;32mI (68680) wifi:pm stop, total sleep time: 437273 us / 67531244 us[0m
+
+[0;32mI (68680) wifi:<ba-del>idx:1, tid:0[0m
+[0;32mI (68680) wifi:<ba-del>idx:0, tid:6[0m
+[0;32mI (68680) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (68690) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (68690) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (68700) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (68700) wifi:state: init -> auth (b0)[0m
+[0;32mI (68720) wifi:state: auth -> assoc (0)[0m
+[0;32mI (68750) wifi:state: assoc -> run (10)[0m
+[0;32mI (68790) wifi:connected with NR-3, aid = 33, channel 1, BW20, bssid = b4:9d:fd:d3:db:7c[0m
+[0;32mI (68790) wifi:security: WPA2-PSK, phy: bgn, rssi: -49[0m
+[0;32mI (68790) wifi:pm start, type: 0[0m
+
+[0;32mI (68790) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (68840) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (68890) wifi:<ba-add>idx:0 (ifx:0, b4:9d:fd:d3:db:7c), tid:6, ssn:1, winSize:64[0m
+[0;32mI (70300

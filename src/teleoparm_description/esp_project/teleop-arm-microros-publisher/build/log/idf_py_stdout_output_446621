@@ -1,0 +1,139 @@
+[0;32mI (233) esp_image: segment 3: paddr=000bff2c vaddr=3fc9e8ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f64
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1870
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcec
+load:0x403cc700,len:0x2ec8
+entry 0x403c9918
+[0;32mI (26) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Dec 31 2025 12:28:00[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (33) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1bac0h (113344) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0002bae8 vaddr=3fc9a300 size=04530h ( 17712) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8ff04h (589572) map[0m
+[0;32mI (233) esp_image: segment 3: paddr=000bff2c vaddr=3fc9e830 size=00878h (  2168) load[0m
+[0;32mI (234) esp_image: segment 4: paddr=000c07ac vaddr=40374000 size=161f8h ( 90616) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (279) cpu_start: Multicore app[0m
+[0;32mI (289) cpu_start: Pro cpu start user code[0m
+[0;32mI (289) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (289) cpu_start: Application information:[0m
+[0;32mI (292) cpu_start: Project name:     teleop-arm-microros-publisher[0m
+[0;32mI (299) cpu_start: App version:      4b25c04-dirty[0m
+[0;32mI (304) cpu_start: Compile time:     Dec 31 2025 12:27:56[0m
+[0;32mI (310) cpu_start: ELF file SHA256:  db5d49419...[0m
+[0;32mI (316) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (321) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (325) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (330) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (335) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (342) heap_init: At 3FCA5800 len 00043F10 (271 KiB): RAM[0m
+[0;32mI (348) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (354) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (361) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (368) spi_flash: detected chip: generic[0m
+[0;32mI (372) spi_flash: flash io: dio[0m
+[0;32mI (376) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (382) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (390) main_task: Started on CPU0[0m
+[0;32mI (400) main_task: Calling app_main()[0m
+[0;32mI (420) wifi_station_netif: ESP_WIFI_MODE_STA[0m
+[0;32mI (420) pp: pp rom version: e7ae62f[0m
+[0;32mI (420) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (430) wifi:wifi driver task: 3fcafb00, prio:23, stack:6656, core=0[0m
+[0;32mI (440) wifi:wifi firmware version: e851349[0m
+[0;32mI (440) wifi:wifi certification version: v7.0[0m
+[0;32mI (440) wifi:config NVS flash: enabled[0m
+[0;32mI (440) wifi:config nano formating: disabled[0m
+[0;32mI (440) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (450) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (450) wifi:Init management short buffer num: 32[0m
+[0;32mI (460) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (460) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (460) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (470) wifi:Init static rx buffer num: 10[0m
+[0;32mI (470) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (480) wifi_init: rx ba win: 6[0m
+[0;32mI (480) wifi_init: tcpip mbox: 32[0m
+[0;32mI (480) wifi_init: udp mbox: 6[0m
+[0;32mI (490) wifi_init: tcp mbox: 6[0m
+[0;32mI (490) wifi_init: tcp tx win: 5760[0m
+[0;32mI (490) wifi_init: tcp rx win: 5760[0m
+[0;32mI (500) wifi_init: tcp mss: 1440[0m
+[0;32mI (500) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (510) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (510) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (520) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (560) wifi:mode : sta (b8:f8:62:d7:8c:7c)[0m
+[0;32mI (570) wifi:enable tsf[0m
+[0;32mI (570) wifi_station_netif: wifi_init_sta finished.[0m
+[0;32mI (580) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (580) wifi:state: init -> auth (b0)[0m
+[0;32mI (600) wifi:state: auth -> assoc (0)[0m
+[0;32mI (620) wifi:Association refused temporarily time 292, comeback time 392 (TUs)[0m
+[0;32mI (1020) wifi:state: assoc -> assoc (0)[0m
+[1;31mE (1040) wifi:Association refused too many times, max allowed 1[0m
+[0;32mI (1040) wifi:state: assoc -> init (d010)[0m
+[0;32mI (1050) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1050) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (1050) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (1070) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1070) wifi:state: init -> auth (b0)[0m
+[0;32mI (1080) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1080) wifi:state: assoc -> run (10)[0m
+[0;32mI (11080) wifi:state: run -> init (cc00)[0m
+[0;32mI (11100) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (11100) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (11100) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (13510) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (13510) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (13520) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (13520) wifi:state: init -> auth (b0)[0m
+[0;32mI (13530) wifi:state: auth -> assoc (0)[0m
+[0;32mI (13550) wifi:state: assoc -> run (10)[0m
+[0;32mI (13580) wifi:connected with NR-3, aid = 29, channel 1, BW20, bssid = b4:9d:fd:d3:db:7c[0m
+[0;32mI (13580) wifi:security: WPA2-PSK, phy: bgn, rssi: -46[0m
+[0;32mI (13590) wifi:pm start, type: 1[0m
+
+[0;32mI (13590) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (13590) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (13630) wifi:<ba-add>idx:0 (ifx:0, b4:9d:fd:d3:db:7c), tid:6, ssn:1, winSize:64[0m
+[0;32mI (13650) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (14600) esp_netif_handlers: sta ip: 192.168.1.84, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (14600) wifi_station_netif: got ip:192.168.1.84[0m
+[0;32mI (14600) wifi_station_netif: connected to ap SSID:NR-3 password:Radhi02@Nagi22[0m
+[0;32mI (14610) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (14610) main_task: Returned from app_main()[0m
+[micro-ROS] Task start
+[micro-ROS] CONFIG agent 192.168.1.237:8888
+[0;32mI (14620) uart: queue free spaces: 20[0m
+[0;32mI (14630) uart: queue free spaces: 20[0m
+[UART] UARTs initialized
+[IMU1] UART task started
+[IMU2] UART task started
+[micro-ROS] Waiting for agent at 192.168.1.237:8888 (UDP)
+[0;32mI (18750) wifi:<ba-add>idx:1 (ifx:0, b4:9d:fd:d3:db:7c), tid:0, ssn:1, winSize:64[0m
+[micro-ROS] Still waiting for agent... (10 tries)
+[micro-ROS] Still waiting for agent... (20 tries)
+[micro-ROS] Still waiting for agent... (30 tries)
+[micro-ROS] Still waiting for agent... (40 tries)
+[micro-ROS] Still waiting for agent... (50 tries)
+[micro-RO
