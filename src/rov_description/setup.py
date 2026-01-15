@@ -25,6 +25,7 @@ setup(
     license='TODO: License declaration',
     entry_points={
         'console_scripts': [
+            "fake_thrusters = rov_description.FakeThruster:main"
         ],
     },
 )

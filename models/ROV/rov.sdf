@@ -1919,5 +1919,130 @@
     <frame name='basefootprintobject_1' attached_to='base_footprint'>
       <pose>0 0 0 0 0 0</pose>
     </frame>
+
+    <!-- PLUGINS -->
+    <plugin
+      filename="plugins/libEER_Hydrodynamics.so"
+      name="gz::sim::systems::EER_Hydrodynamics">
+      <link_name>base_link</link_name>
+      <water_density>1000</water_density>
+      <xDotU>1.32246275</xDotU>
+      <yDotV>1.04396026</yDotV>
+      <zDotW>6.64814797</zDotW> <!--Should be 27.12577546 but that makes it crash-->
+      <kDotP>0.03548512</kDotP>
+      <mDotQ>0.02818614</mDotQ>
+      <nDotR>0.01814365</nDotR>
+      <xUabsU>-40</xUabsU> 
+      <xU>-30</xU>
+      <yVabsV>-40</yVabsV>
+      <yV>-25</yV>
+      <zWabsW>-50</zWabsW>
+      <zW>-50</zW>
+      <kPabsP>-20</kPabsP>
+      <kP>-20</kP>
+      <mQabsQ>-125</mQabsQ>
+      <mQ>-50</mQ>
+      <nRabsR>-20</nRabsR>
+      <nR>-20</nR>
+    </plugin>
+
+    <!-- Thrusters -->
+      <!-- Translational -->
+    <plugin
+      filename="plugins/libEER_Thruster.so"
+      name="gz::sim::systems::EER_Thruster">
+      <namespace>proptrans</namespace>
+      <joint_name>frontrightpropjoint</joint_name>
+      <!-- <use_esc_cmd>true</use_esc_cmd> -->
+      <use_force_cmd>true</use_force_cmd>s
+      <fluid_density>1000</fluid_density>
+      <topic>frontright</topic>
+      <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
+
+    <plugin
+      filename="plugins/libEER_Thruster.so"
+      name="gz::sim::systems::EER_Thruster">
+      <namespace>proptrans</namespace>
+      <joint_name>frontleftpropjoint</joint_name>
+      <!-- <use_esc_cmd>true</use_esc_cmd> -->
+      <use_force_cmd>true</use_force_cmd>
+      <fluid_density>1000</fluid_density>
+      <topic>frontleft</topic>
+      <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
+
+    <plugin
+      filename="plugins/libEER_Thruster.so"
+      name="gz::sim::systems::EER_Thruster">
+      <namespace>proptrans</namespace>
+      <joint_name>backrightpropjoint</joint_name>
+      <!-- <use_esc_cmd>true</use_esc_cmd> -->
+      <use_force_cmd>true</use_force_cmd>
+      <fluid_density>1000</fluid_density>
+      <topic>backright</topic>
+      <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
+
+    <plugin
+      filename="plugins/libEER_Thruster.so"
+      name="gz::sim::systems::EER_Thruster">
+      <namespace>proptrans</namespace>
+      <joint_name>backleftpropjoint</joint_name>
+      <!-- <use_esc_cmd>true</use_esc_cmd> -->
+      <use_force_cmd>true</use_force_cmd>
+      <fluid_density>1000</fluid_density>
+      <topic>backleft</topic>
+      <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
+
+      <!-- Top -->
+    <plugin
+      filename="plugins/libEER_Thruster.so"
+      name="gz::sim::systems::EER_Thruster">
+      <namespace>propvert</namespace>
+      <joint_name>topfrontrightpropjoint</joint_name>
+      <!-- <use_esc_cmd>true</use_esc_cmd> -->
+      <use_force_cmd>true</use_force_cmd>
+      <fluid_density>1000</fluid_density>
+      <topic>frontright</topic>
+      <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
+
+    <plugin
+      filename="plugins/libEER_Thruster.so"
+      name="gz::sim::systems::EER_Thruster">
+      <namespace>propvert</namespace>
+      <joint_name>topfrontleftpropjoint</joint_name>
+      <!-- <use_esc_cmd>true</use_esc_cmd> -->
+      <use_force_cmd>true</use_force_cmd>
+      <fluid_density>1000</fluid_density>
+      <topic>frontleft</topic>
+      <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
+
+    <plugin
+      filename="plugins/libEER_Thruster.so"
+      name="gz::sim::systems::EER_Thruster">
+      <namespace>propvert</namespace>
+      <joint_name>topbackrightpropjoint</joint_name>
+      <!-- <use_esc_cmd>true</use_esc_cmd> -->
+      <use_force_cmd>true</use_force_cmd>
+      <fluid_density>1000</fluid_density>
+      <topic>backright</topic>
+      <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
+
+    <plugin
+      filename="plugins/libEER_Thruster.so"
+      name="gz::sim::systems::EER_Thruster">
+      <namespace>propvert</namespace>
+      <joint_name>topbackleftpropjoint</joint_name>
+      <!-- <use_esc_cmd>true</use_esc_cmd> -->
+      <use_force_cmd>true</use_force_cmd>
+      <fluid_density>1000</fluid_density>
+      <topic>backleft</topic>
+      <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
   </model>
 </sdf>
