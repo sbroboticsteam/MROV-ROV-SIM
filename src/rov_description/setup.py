@@ -15,7 +15,11 @@ setup(
         (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
         (os.path.join('share', package_name, 'urdf'), glob('urdf/*')),
         (os.path.join('share', package_name, 'meshes'), glob('meshes/*')),
-        (os.path.join('share', package_name, 'config'), glob('config/*'))
+        (os.path.join('share', package_name, 'config'), glob('config/*')),
+        (os.path.join('share', package_name, 'worlds'), glob('worlds/*')),
+        (os.path.join('share', package_name, 'plugins'), glob('plugins/*.so')),
+        (os.path.join('share', package_name, 'plugins', 'T200_Thruster_Behavior'),
+         glob('plugins/T200_Thruster_Behavior/*.csv')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
