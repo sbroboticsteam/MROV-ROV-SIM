@@ -889,14 +889,14 @@
 </joint>
 
 <joint name="shoulderjoint" type="continuous">
-  <origin xyz="0.0 -0.102 -0.003175" rpy="0 0 0"/>
+  <origin xyz="0.0 -0.102 -0.003175" rpy="0 0 3.141592653589793"/>
   <parent link="V4B_SupportPlate_v1_1"/>
   <child link="shoulder_1"/>
   <axis xyz="0.0 0.0 -1.0"/>
 </joint>
 
 <joint name="elbowjoint" type="continuous">
-  <origin xyz="-0.2075 0.0 -0.004174" rpy="0 0 0"/>
+  <origin xyz="-0.2075 0.0 -0.004174" rpy="0 0 -3.141592653589793"/>
   <parent link="shoulder_1"/>
   <child link="elbow_1"/>
   <axis xyz="0.0 -0.0 1.0"/>
