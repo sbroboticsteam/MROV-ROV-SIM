@@ -1,0 +1,95 @@
+# ros_gz_bridge configuration for ROV
+# Bridges Gazebo topics to ROS 2 topics to control with ROS Nodes
+# Joint States (for RViz compatibility)
+- ros_topic_name: "joint_states"
+  gz_topic_name: "rov/joint_states"
+  ros_type_name: "sensor_msgs/msg/JointState"
+  gz_type_name: "gz.msgs.Model"
+  direction: GZ_TO_ROS
+
+# Odometry
+- topic_name: "rov/odom"
+  ros_type_name: "sensor_msgs/msg/JointState"
+  gz_type_name: "gz.msgs.Model"
+  direction: GZ_TO_ROS
+
+# Clock (for simulation time)
+- topic_name: "/clock"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+# Claw Control topic
+- ros_topic_name: "rov/claw"
+  gz_topic_name: "/rov/claws/cmd_vel"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+# Servo Control topics
+- ros_topic_name: "rov/wrist"
+  gz_topic_name: "wristjoint"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "rov/elbow"
+  gz_topic_name: "elbowjoint"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "rov/shoulder"
+  gz_topic_name: "shoulderjoint"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+# Thruster control topics
+- ros_topic_name: "rov/backleft"
+  gz_topic_name: "rov/backleftthrust"
+  ros_type_name: "std_msgs/msg/Int32"
+  gz_type_name: "gz.msgs.Int32"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "rov/backright"
+  gz_topic_name: "rov/backrightthrust"
+  ros_type_name: "std_msgs/msg/Int32"
+  gz_type_name: "gz.msgs.Int32"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "rov/frontleft"
+  gz_topic_name: "rov/frontleftthrust"
+  ros_type_name: "std_msgs/msg/Int32"
+  gz_type_name: "gz.msgs.Int32"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "rov/frontright"
+  gz_topic_name: "rov/frontrightthrust"
+  ros_type_name: "std_msgs/msg/Int32"
+  gz_type_name: "gz.msgs.Int32"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "rov/topbackleft"
+  gz_topic_name: "rov/topbackleftthrust"
+  ros_type_name: "std_msgs/msg/Int32"
+  gz_type_name: "gz.msgs.Int32"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "rov/topbackright"
+  gz_topic_name: "rov/topbackrightthrust"
+  ros_type_name: "std_msgs/msg/Int32"
+  gz_type_name: "gz.msgs.Int32"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "rov/topfrontleft"
+  gz_topic_name: "rov/topfrontleftthrust"
+  ros_type_name: "std_msgs/msg/Int32"
+  gz_type_name: "gz.msgs.Int32"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "rov/topfrontright"
+  gz_topic_name: "rov/topfrontrightthrust"
+  ros_type_name: "std_msgs/msg/Int32"
+  gz_type_name: "gz.msgs.Int32"
+  direction: ROS_TO_GZ

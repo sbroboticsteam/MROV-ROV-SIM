@@ -3,6 +3,27 @@
 
 <xacro:property name="body_color" value="Gray" />
 
+<gazebo>
+  <!-- Joint State Publisher -->
+  <plugin filename="gz-sim-joint-state-publisher-system" 
+          name="gz::sim::systems::JointStatePublisher">
+    <topic>rov/joint_states</topic>
+    <update_rate>50</update_rate>
+  </plugin>
+</gazebo>
+
+<gazebo>
+  <!-- Odometry Publisher -->
+  <plugin filename="gz-sim-odometry-publisher-system" 
+          name="gz::sim::systems::OdometryPublisher">
+    <odom_frame>odom</odom_frame>
+    <robot_base_frame>base_link</robot_base_frame>
+    <odom_publish_frequency>50</odom_publish_frequency>
+    <odom_topic>rov/odom</odom_topic>
+    <dimensions>3</dimensions>
+  </plugin>
+</gazebo>
+
 <!-- Buoyancy Plugin-->
 <gazebo>
   <plugin

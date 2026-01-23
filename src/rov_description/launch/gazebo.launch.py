@@ -27,6 +27,7 @@ def generate_launch_description():
     xacro_file = os.path.join(pkg_rov_description, "urdf", "rov.xacro")
     rviz_config = os.path.join(pkg_rov_description, "config", "display.rviz")
     world_file = os.path.join(pkg_rov_description, "worlds", "CompetitionWorld2025.sdf")
+    bridge_config = os.path.join(pkg_rov_description, "config", "ros_gz_bridge.yaml")
     
     # Launch arguments
     use_sim_time = LaunchConfiguration("use_sim_time")
@@ -114,6 +115,20 @@ def generate_launch_description():
         ],
         output="screen",
     )
+
+    # ros_gz_bridge
+    bridge = Node(
+        package="ros_gz_bridge",
+        executable="parameter_bridge",
+        parameters=[
+            {
+                "config_file": bridge_config,
+                "qos_overrides./tf_static.publisher.durability": "transient_local",
+                "use_sim_time": use_sim_time,
+            }
+        ],
+        output="screen",
+    )
     
     # RViz2
     rviz_node = Node(
@@ -123,27 +138,6 @@ def generate_launch_description():
         parameters=[{"use_sim_time": use_sim_time}],
         condition=IfCondition(rviz),
         output="screen",
-    )
-
-    gui_arg = DeclareLaunchArgument(
-        name='gui',
-        default_value='True'
-    )
-
-    show_gui = LaunchConfiguration('gui')
-
-    joint_state_publisher_node = Node(
-        condition=UnlessCondition(show_gui),
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
-        name='joint_state_publisher'
-    )
-
-    joint_state_publisher_gui_node = Node(
-        condition=IfCondition(show_gui),
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
-        name='joint_state_publisher_gui'
     )
     
     return LaunchDescription(
@@ -180,9 +174,7 @@ def generate_launch_description():
             gz_sim_gui,
             robot_state_publisher,
             spawn_robot,
+            bridge,
             rviz_node,
-            gui_arg,
-            joint_state_publisher_node,
-            joint_state_publisher_gui_node,
         ]
     )
