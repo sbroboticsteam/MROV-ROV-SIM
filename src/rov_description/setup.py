@@ -29,7 +29,7 @@ setup(
     license='TODO: License declaration',
     entry_points={
         'console_scripts': [
-            "arm_node = rov_description.arm_test:main",
+            "controller_node = rov_description.xbox_control:main",
         ],
     },
 )
