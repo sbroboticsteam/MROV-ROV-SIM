@@ -14,6 +14,7 @@ from launch.substitutions import Command, LaunchConfiguration
 from launch_ros.actions import Node
 from launch.conditions import IfCondition, UnlessCondition
 from launch.actions import SetEnvironmentVariable
+from launch_ros.parameter_descriptions import ParameterValue
 
 
 def generate_launch_description():
@@ -42,14 +43,19 @@ def generate_launch_description():
             os.environ["SDF_PATH"] = sdf_path + ":" + gz_sim_resource_path
         else:
             os.environ["SDF_PATH"] = gz_sim_resource_path
-    
-    # Robot description from xacro
-    robot_description = Command(
+            
+     # Robot description from xacro
+    robot_description_cmd = Command(
         [
-            "xacro ",
+            "xacro",
+            " ",
             xacro_file,
         ]
     )
+
+    # Robot description from xacro
+    robot_description = ParameterValue(robot_description_cmd, value_type=str)
+
     force_plugin_path = SetEnvironmentVariable(
         name="GZ_SIM_SYSTEM_PLUGIN_PATH",
         value=pkg_rov_description

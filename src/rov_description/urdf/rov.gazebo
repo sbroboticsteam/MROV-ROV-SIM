@@ -12,7 +12,7 @@
       <set_volume>
           <entity>base_link</entity>
           <!-- Displaes approximately 18.48kg of water (extra volume displaced can be imagined as adding foam) -->
-          <volume>0.01848</volume>
+          <volume>0.0187</volume>
           <center_of_volume>0 0 0</center_of_volume>
       </set_volume>
       <enable>base_link</enable>

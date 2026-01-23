@@ -17,6 +17,7 @@ This directory contains the `EER_Thruster` Gazebo Sim system plugin, including s
 From the **root of your workspace** (the folder containing `src/`):
 
 ```bash
+rm -rf build/ plugins/
 mkdir -p build
 cd build
 cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo
