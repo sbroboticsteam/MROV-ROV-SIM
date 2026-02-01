@@ -29,7 +29,6 @@ setup(
     license='TODO: License declaration',
     entry_points={
         'console_scripts': [
-            "controller_node = rov_description.xbox_control:main",
         ],
     },
 )

@@ -1,8 +1,6 @@
 <?xml version="1.0" ?>
 <robot name="rov" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-<xacro:property name="body_color" value="Gray" />
-
 <gazebo>
   <!-- Joint State Publisher -->
   <plugin filename="gz-sim-joint-state-publisher-system" 
@@ -24,6 +22,13 @@
   </plugin>
 </gazebo>
 
+<!-- Import for Camera plugins -->
+<plugin
+  filename="gz-sim-sensors-system"
+  name="gz::sim::systems::Sensors">
+  <render_engine>ogre2</render_engine>
+</plugin>
+
 <!-- Buoyancy Plugin-->
 <gazebo>
   <plugin
@@ -33,7 +38,7 @@
       <set_volume>
           <entity>base_link</entity>
           <!-- Displaes approximately 18.48kg of water (extra volume displaced can be imagined as adding foam) -->
-          <volume>0.0187</volume>
+          <volume>0.013</volume>
           <center_of_volume>0 0 0</center_of_volume>
       </set_volume>
       <enable>base_link</enable>
@@ -68,13 +73,13 @@
   </plugin>
 </gazebo>
 
-<!--Servo Plugins-->
+<!--Servo Plugins for each of the arm joint-->
 <gazebo> 
   <plugin
         filename="plugins/libEER_Servo.so"
         name="gz::sim::systems::Servo">
-          <joint>shoulderjoint</joint>
-          <topic>shoulderjoint</topic>
+          <joint>arm0</joint>
+          <topic>arm0</topic>
   </plugin>
 </gazebo>
 
@@ -82,8 +87,8 @@
   <plugin
         filename="plugins/libEER_Servo.so"
         name="gz::sim::systems::Servo">
-          <joint>elbowjoint</joint>
-          <topic>elbowjoint</topic>
+          <joint>arm1</joint>
+          <topic>arm1</topic>
   </plugin>
 </gazebo>
 
@@ -91,12 +96,174 @@
   <plugin
         filename="plugins/libEER_Servo.so"
         name="gz::sim::systems::Servo">
-          <joint>wristjoint</joint>
-          <topic>wristjoint</topic>
+          <joint>arm2</joint>
+          <topic>arm2</topic>
   </plugin>
 </gazebo>
 
-<!--Claw Plugin-->
+<!--Differential Claw System Joints -->
+<gazebo> 
+  <plugin
+        filename="plugins/libEER_Servo.so"
+        name="gz::sim::systems::Servo">
+          <joint>BevelEnd</joint>
+          <topic>bevelend</topic>
+  </plugin>
+</gazebo>
+
+<gazebo> 
+  <plugin
+        filename="plugins/libEER_Servo.so"
+        name="gz::sim::systems::Servo">
+          <joint>BevelRight</joint>
+          <topic>bevelright</topic>
+  </plugin>
+</gazebo>
+
+<gazebo> 
+  <plugin
+        filename="plugins/libEER_Servo.so"
+        name="gz::sim::systems::Servo">
+          <joint>BevelLeft</joint>
+          <topic>bevelleft</topic>
+  </plugin>
+</gazebo>
+
+<gazebo> 
+  <plugin
+        filename="plugins/libEER_Servo.so"
+        name="gz::sim::systems::Servo">
+          <joint>BevelClampJoint</joint>
+          <topic>bevelclamp</topic>
+  </plugin>
+</gazebo>
+
+<!--Swivel Camera Joint for ZED + Sensor Init -->
+<gazebo> 
+  <plugin
+        filename="plugins/libEER_Servo.so"
+        name="gz::sim::systems::Servo">
+          <joint>ZEDSwivelLink</joint>
+          <topic>stereo/swivel</topic>
+  </plugin>
+</gazebo>
+
+<!--Thruster plugins to the proper joints-->
+<gazebo>
+    <plugin
+        filename="plugins/libEER_Thruster.so"
+        name="gz::sim::systems::EER_Thruster">
+        <namespace>rov</namespace>
+        <joint_name>FrontRightThrust</joint_name>
+        <use_esc_cmd>true</use_esc_cmd>
+        <thruster_input_voltage>18</thruster_input_voltage>
+        <fluid_density>1000</fluid_density>
+        <topic>frt</topic>
+        <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
+</gazebo>
+
+<gazebo>
+    <plugin
+        filename="plugins/libEER_Thruster.so"
+        name="gz::sim::systems::EER_Thruster">
+        <namespace>rov</namespace>
+        <joint_name>BackRightThrust</joint_name>
+        <use_esc_cmd>true</use_esc_cmd>
+        <thruster_input_voltage>18</thruster_input_voltage>
+        <fluid_density>1000</fluid_density>
+        <topic>brt</topic>
+        <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
+</gazebo>
+
+<gazebo>
+    <plugin
+        filename="plugins/libEER_Thruster.so"
+        name="gz::sim::systems::EER_Thruster">
+        <namespace>rov</namespace>
+        <joint_name>BackLeftThrust</joint_name>
+        <use_esc_cmd>true</use_esc_cmd>
+        <thruster_input_voltage>18</thruster_input_voltage>
+        <fluid_density>1000</fluid_density>
+        <topic>blt</topic>
+        <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
+</gazebo>
+
+<gazebo>
+    <plugin
+        filename="plugins/libEER_Thruster.so"
+        name="gz::sim::systems::EER_Thruster">
+        <namespace>rov</namespace>
+        <joint_name>FrontLeftThrust</joint_name>
+        <use_esc_cmd>true</use_esc_cmd>
+        <thruster_input_voltage>18</thruster_input_voltage>
+        <fluid_density>1000</fluid_density>
+        <topic>flt</topic>
+        <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
+</gazebo>
+
+<gazebo>
+    <plugin
+        filename="plugins/libEER_Thruster.so"
+        name="gz::sim::systems::EER_Thruster">
+        <namespace>rov</namespace>
+        <joint_name>TFrontRightThrust</joint_name>
+        <use_esc_cmd>true</use_esc_cmd>
+        <thruster_input_voltage>18</thruster_input_voltage>
+        <fluid_density>1000</fluid_density>
+        <topic>frtz</topic>
+        <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
+</gazebo>
+
+<gazebo>
+    <plugin
+        filename="plugins/libEER_Thruster.so"
+        name="gz::sim::systems::EER_Thruster">
+        <namespace>rov</namespace>
+        <joint_name>TBackRightThrust</joint_name>
+        <use_esc_cmd>true</use_esc_cmd>
+        <thruster_input_voltage>18</thruster_input_voltage>
+        <fluid_density>1000</fluid_density>
+        <topic>brtz</topic>
+        <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
+</gazebo>
+
+<gazebo>
+    <plugin
+        filename="plugins/libEER_Thruster.so"
+        name="gz::sim::systems::EER_Thruster">
+        <namespace>rov</namespace>
+        <joint_name>TBackLeftThrust</joint_name>
+        <use_esc_cmd>true</use_esc_cmd>
+        <thruster_input_voltage>18</thruster_input_voltage>
+        <fluid_density>1000</fluid_density>
+        <topic>bltz</topic>
+        <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
+</gazebo>
+
+<gazebo>
+    <plugin
+        filename="plugins/libEER_Thruster.so"
+        name="gz::sim::systems::EER_Thruster">
+        <namespace>rov</namespace>
+        <joint_name>TFrontLeftThrust</joint_name>
+        <use_esc_cmd>true</use_esc_cmd>
+        <thruster_input_voltage>18</thruster_input_voltage>
+        <fluid_density>1000</fluid_density>
+        <topic>fltz</topic>
+        <propeller_diameter>0.076</propeller_diameter>
+    </plugin>
+</gazebo>
+
+<!--End of Thruster plugin definitions-->
+<!--No Claw Plugin Used for this ROV Yet, example usage below-->
+<!--
 <gazebo>
   <plugin
         filename="plugins/libEER_Claws.so"
@@ -113,368 +280,441 @@
         </left_claw>
     </plugin>
 </gazebo>
+-->
 
-<!--Thruster plugins to the proper joints-->
-<gazebo>
-    <plugin
-        filename="plugins/libEER_Thruster.so"
-        name="gz::sim::systems::EER_Thruster">
-        <namespace>rov</namespace>
-        <joint_name>backrightpropjoint</joint_name>
-        <use_esc_cmd>true</use_esc_cmd>
-        <thruster_input_voltage>18</thruster_input_voltage>
-        <fluid_density>1000</fluid_density>
-        <topic>backrightthrust</topic>
-        <propeller_diameter>0.076</propeller_diameter>
-    </plugin>
-</gazebo>
-
-<gazebo>
-    <plugin
-        filename="plugins/libEER_Thruster.so"
-        name="gz::sim::systems::EER_Thruster">
-        <namespace>rov</namespace>
-        <joint_name>backleftpropjoint</joint_name>
-        <use_esc_cmd>true</use_esc_cmd>
-        <thruster_input_voltage>18</thruster_input_voltage>
-        <fluid_density>1000</fluid_density>
-        <topic>backleftthrust</topic>
-        <propeller_diameter>0.076</propeller_diameter>
-    </plugin>
-</gazebo>
-
-<gazebo>
-    <plugin
-        filename="plugins/libEER_Thruster.so"
-        name="gz::sim::systems::EER_Thruster">
-        <namespace>rov</namespace>
-        <joint_name>frontleftpropjoint</joint_name>
-        <use_esc_cmd>true</use_esc_cmd>
-        <thruster_input_voltage>18</thruster_input_voltage>
-        <fluid_density>1000</fluid_density>
-        <topic>frontleftthrust</topic>
-        <propeller_diameter>0.076</propeller_diameter>
-    </plugin>
-</gazebo>
-
-<gazebo>
-    <plugin
-        filename="plugins/libEER_Thruster.so"
-        name="gz::sim::systems::EER_Thruster">
-        <namespace>rov</namespace>
-        <joint_name>frontrightpropjoint</joint_name>
-        <use_esc_cmd>true</use_esc_cmd>
-        <thruster_input_voltage>18</thruster_input_voltage>
-        <fluid_density>1000</fluid_density>
-        <topic>frontrightthrust</topic>
-        <propeller_diameter>0.076</propeller_diameter>
-    </plugin>
-</gazebo>
-
-<gazebo>
-    <plugin
-        filename="plugins/libEER_Thruster.so"
-        name="gz::sim::systems::EER_Thruster">
-        <namespace>rov</namespace>
-        <joint_name>topbackrightpropjoint</joint_name>
-        <use_esc_cmd>true</use_esc_cmd>
-        <thruster_input_voltage>18</thruster_input_voltage>
-        <fluid_density>1000</fluid_density>
-        <topic>topbackrightthrust</topic>
-        <propeller_diameter>0.076</propeller_diameter>
-    </plugin>
-</gazebo>
-
-<gazebo>
-    <plugin
-        filename="plugins/libEER_Thruster.so"
-        name="gz::sim::systems::EER_Thruster">
-        <namespace>rov</namespace>
-        <joint_name>topbackleftpropjoint</joint_name>
-        <use_esc_cmd>true</use_esc_cmd>
-        <thruster_input_voltage>18</thruster_input_voltage>
-        <fluid_density>1000</fluid_density>
-        <topic>topbackleftthrust</topic>
-        <propeller_diameter>0.076</propeller_diameter>
-    </plugin>
-</gazebo>
-
-<gazebo>
-    <plugin
-        filename="plugins/libEER_Thruster.so"
-        name="gz::sim::systems::EER_Thruster">
-        <namespace>rov</namespace>
-        <joint_name>topfrontleftpropjoint</joint_name>
-        <use_esc_cmd>true</use_esc_cmd>
-        <thruster_input_voltage>18</thruster_input_voltage>
-        <fluid_density>1000</fluid_density>
-        <topic>topfrontleftthrust</topic>
-        <propeller_diameter>0.076</propeller_diameter>
-    </plugin>
-</gazebo>
-
-<gazebo>
-    <plugin
-        filename="plugins/libEER_Thruster.so"
-        name="gz::sim::systems::EER_Thruster">
-        <namespace>rov</namespace>
-        <joint_name>topfrontrightpropjoint</joint_name>
-        <use_esc_cmd>true</use_esc_cmd>
-        <thruster_input_voltage>18</thruster_input_voltage>
-        <fluid_density>1000</fluid_density>
-        <topic>topfrontrightthrust</topic>
-        <propeller_diameter>0.076</propeller_diameter>
-    </plugin>
-</gazebo>
-
-
-<gazebo reference="base_link">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
-
-<gazebo reference="VerticalThrusterSupportBeams_2">
+<gazebo reference="VerticalThrusterBeams_V7_v1__3__1">
   
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="VerticalThrusterSupportBeams_1">
+<gazebo reference="VerticalThrusterBeams_V7_v1__2__1">
   
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="VerticalThrusterSupportBeams_4">
+<gazebo reference="VerticalThrusterBeams_V7_v1_1">
   
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="VerticalThrusterSupportBeams_3">
+<gazebo reference="VerticalThrusterBeams_V7_v1__1__1">
   
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="Handles_2">
+<gazebo reference="T200_v2__7__1">
   
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="Handles_1">
+<gazebo reference="T200_v2__1__1">
   
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="propbackright_1">
+<gazebo reference="T200_v2_1">
   
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="propbackleft_1">
+<gazebo reference="T200_v2__4__1">
   
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="propfrontleft_1">
+<gazebo reference="T200_v2__5__1">
   
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="propfrontright_1">
+<gazebo reference="T200_v2__2__1">
   
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="proptopfrontright_1">
+<gazebo reference="T200_v2__6__1">
   
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="proptopfrontleft_1">
+<gazebo reference="T200_v2__3__1">
   
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="proptopbackleft_1">
+<gazebo reference="ChassisTopPlate_V7_v1_1">
   
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="proptopbackright_1">
+<gazebo reference="T200Prop_v1_1">
   
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="T200Prop_v1__2__1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="T200Prop_v1__1__1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="T200Prop_v1__3__1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="T200Prop_v1__4__1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="T200Prop_v1__5__1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="T200Prop_v1__6__1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="T200Prop_v1__7__1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="igusbearningbase_v1_1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="igusbearningtop_v1_1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="ArmBasePlate_v1_1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="Arm_Base_Back_Plate_v1_1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="shoulderJoint_v1_1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="ArmShoulder_v1_1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="BevelGearTop_v1_1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="BevelGearRight_v1_1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="BevelGearLeft_v1_1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="CameraZED_v1_1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<!-- USB Camera Sensors -->
+<gazebo reference="CameraUSB_v1__1__1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+  <sensor name="usb_cam_0" type="camera">
+    <always_on>true</always_on>
+    <update_rate>30</update_rate>
+    <pose>0.0321945 -0.055127 -0.055127 0 0.88 -1.385398163</pose>
+    <!-- Gazebo Transport topic -->
+    <topic>rov/camera_usb_0/image_raw</topic>
+
+    <camera name="usb_cam_0_camera">
+      <camera_info_topic>rov/camera_usb_0/camera_info</camera_info_topic>
+
+      <horizontal_fov>1.047</horizontal_fov> <!-- ~60 deg -->
+      <image>
+        <width>640</width>
+        <height>480</height>
+        <format>R8G8B8</format>
+      </image>
+      <clip>
+        <near>0.05</near>
+        <far>50</far>
+      </clip>
+      <visibility_mask>0x3fffffff</visibility_mask>
+    </camera>
+  </sensor>
+</gazebo>
+
+<gazebo reference="CameraUSB_v1_1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+  <sensor name="usb_cam_1" type="camera">
+    <always_on>true</always_on>
+    <update_rate>30</update_rate>
+    <pose>-0.015127 -0.015127 -0.0150127 0 0 -2.485398163</pose>
+    <topic>rov/camera_usb_1/image_raw</topic>
+
+    <camera name="usb_cam_1_camera">
+      <camera_info_topic>rov/camera_usb_1/camera_info</camera_info_topic>
+
+      <horizontal_fov>1.047</horizontal_fov>
+      <image>
+        <width>640</width>
+        <height>480</height>
+        <format>R8G8B8</format>
+      </image>
+      <clip>
+        <near>0.05</near>
+        <far>50</far>
+      </clip>
+      <visibility_mask>0x3fffffff</visibility_mask>
+    </camera>
+  </sensor>
+</gazebo>
+
+<!-- Insta360 Air approximation: two 210° wide-angle cameras (front/back) -->
+<!-- Specs reference: dual 210° lenses, 2560x1280@30fps output in real device -->
+<!-- In sim we model it as 2 fisheyes you can stitch in ROS if desired -->
+
+<gazebo reference="insta360_backcam_link">
+  <sensor name="insta360_back" type="wideanglecamera">
+    <always_on>1</always_on>
+    <visualize>true</visualize>
+    <update_rate>30</update_rate>
+    <!-- 90 degree rotation -->
+    <pose>0 0 0 0 0 1.5707963265</pose>
+    <!-- Base topic name in Gazebo Transport -->
+    <topic>/rov/camera/insta360/back</topic>
+
+    <camera>
+      <!-- 210 deg -->
+      <horizontal_fov>3.665191429</horizontal_fov>
+
+      <!-- Per-lens image; common to use square for fisheye -->
+      <image>
+        <width>2560</width>
+        <height>1280</height>
+        <format>R8G8B8</format>
+      </image>
+
+      <clip>
+        <near>0.1</near>
+        <far>100</far>
+      </clip>
+      <visibility_mask>1073741821</visibility_mask> 
+
+      <lens>
+        <type>stereographic</type>
+        <scale_to_hfov>true</scale_to_hfov>
+        <cutoff_angle>1.832595714</cutoff_angle> <!-- 105 deg -->
+        <env_texture_size>1024</env_texture_size>
+      </lens>
+    </camera>
+  </sensor>
+</gazebo>
+
+<gazebo reference="insta360_frontcam_link">
+  <sensor name="insta360_front" type="wideanglecamera">
+    <always_on>1</always_on>
+    <visualize>true</visualize>
+    <update_rate>30</update_rate>
+    <pose>0 0 0 0 0 1.5707963265</pose>
+    <topic>/rov/camera/insta360/front</topic>
+
+    <camera>
+      <horizontal_fov>3.665191429</horizontal_fov>
+      <image>
+        <width>2560</width>
+        <height>1280</height>
+        <format>R8G8B8</format>
+      </image>
+      <clip>
+        <near>0.1</near>
+        <far>100</far>
+      </clip>
+      <visibility_mask>1073741821</visibility_mask> 
+      <lens>
+        <type>stereographic</type>
+        <scale_to_hfov>true</scale_to_hfov>
+        <cutoff_angle>1.832595714</cutoff_angle>
+        <env_texture_size>1024</env_texture_size>
+      </lens>
+    </camera>
+  </sensor>
+</gazebo>
+
+ <!-- Stereo Camera Plugin--> 
+<!-- Left camera -->
+<gazebo reference="zed_left_cam_link">
+  <sensor name="zed_left" type="camera">
+    <always_on>1</always_on>
+    <update_rate>30</update_rate>
+    <visualize>true</visualize>
+
+    <!-- Gazebo Transport image topic -->
+    <topic>/rov/zed/left/image_raw</topic>
+
+    <!-- Frame id that ends up in messages -->
+    <gz_frame_id>zed_left_optical_frame</gz_frame_id>
+
+    <camera>
+      <!-- Gazebo Transport camera_info topic -->
+      <camera_info_topic>/rov/zed/left/camera_info</camera_info_topic>
+
+      <horizontal_fov>1.2</horizontal_fov>
+      <image>
+        <width>1280</width>
+        <height>720</height>
+        <format>R8G8B8</format>
+      </image>
+      <clip>
+        <near>0.05</near>
+        <far>50</far>
+      </clip>
+    </camera>
+  </sensor>
+</gazebo>
+
+<!-- Right camera -->
+<gazebo reference="zed_right_cam_link">
+  <sensor name="zed_right" type="camera">
+    <always_on>1</always_on>
+    <update_rate>30</update_rate>
+    <visualize>true</visualize>
+    <topic>/rov/zed/right/image_raw</topic>
+    <gz_frame_id>zed_right_optical_frame</gz_frame_id>
+
+    <camera>
+      <camera_info_topic>/rov/zed/right/camera_info</camera_info_topic>
+      <horizontal_fov>1.2</horizontal_fov>
+      <image>
+        <width>1280</width>
+        <height>720</height>
+        <format>R8G8B8</format>
+      </image>
+      <clip>
+        <near>0.05</near>
+        <far>50</far>
+      </clip>
+    </camera>
+  </sensor>
+</gazebo>
+
+
+
+
+<gazebo reference="FrontArm_v1_1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="DifferentialFrame_v1_1">
+  
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="CameraInsta360_v1_1">
+  <visual>
+    <!-- Hide this visual from the camera sensors -->
+    <visibility_flags>2</visibility_flags>
+  </visual>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="Ebox_v1_1">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="Rotation_ArmBasePlate_v1_1">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="Rotation_ArmBasePlate_v1__1__1">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="PillowBlockMount_v1_1">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="PillowBlockMount_v1__1__1">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="V4B_SupportPlate_v1_1">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="shoulder_1">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="elbow_1">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="wrist_1">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="left_claw_1">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="right_claw_1">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="basefootprintobject_1">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="TopPlate_1">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="T200_1">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="T200_2">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="T200_7">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="T200_3">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="T200_8">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="T200_4">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="T200_6">
-  
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="T200_5">
   
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>

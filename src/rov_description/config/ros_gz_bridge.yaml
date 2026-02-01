@@ -8,88 +8,175 @@
   direction: GZ_TO_ROS
 
 # Odometry
-- topic_name: "rov/odom"
-  ros_type_name: "sensor_msgs/msg/JointState"
-  gz_type_name: "gz.msgs.Model"
-  direction: GZ_TO_ROS
-
-# Clock (for simulation time)
-- topic_name: "/clock"
+- ros_topic_name: "rov/odom"
+  gz_topic_name: "rov/odom"
   ros_type_name: "nav_msgs/msg/Odometry"
   gz_type_name: "gz.msgs.Odometry"
   direction: GZ_TO_ROS
 
-# Claw Control topic
-- ros_topic_name: "rov/claw"
-  gz_topic_name: "/rov/claws/cmd_vel"
-  ros_type_name: "std_msgs/msg/Float64"
-  gz_type_name: "gz.msgs.Double"
-  direction: ROS_TO_GZ
+# Clock (for simulation time)
+- ros_topic_name: "/clock"
+  gz_topic_name: "/clock"
+  ros_type_name: "rosgraph_msgs/msg/Clock"
+  gz_type_name: "gz.msgs.Clock"
+  direction: GZ_TO_ROS
+
+#  CameraInfo 
+- ros_topic_name: "rov/camera/usb0/camera_info"
+  gz_topic_name: "rov/camera_usb_0/camera_info"
+  ros_type_name: "sensor_msgs/msg/CameraInfo"
+  gz_type_name: "gz.msgs.CameraInfo"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "rov/camera/usb1/camera_info"
+  gz_topic_name: "rov/camera_usb_1/camera_info"
+  ros_type_name: "sensor_msgs/msg/CameraInfo"
+  gz_type_name: "gz.msgs.CameraInfo"
+  direction: GZ_TO_ROS
+
+# Camera Data
+- ros_topic_name: "rov/camera/usb0/image"
+  gz_topic_name: "rov/camera_usb_0/image_raw"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "rov/camera/usb1/image"
+  gz_topic_name: "rov/camera_usb_1/image_raw"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: GZ_TO_ROS
+
+# Insta360 front
+- ros_topic_name: "rov/camera/insta360/front/image"
+  gz_topic_name: "/rov/camera/insta360/front"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: GZ_TO_ROS
+
+# Insta360 back
+- ros_topic_name: "rov/camera/insta360/back/image"
+  gz_topic_name: "/rov/camera/insta360/back"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: GZ_TO_ROS
+
+# ZED left (RGB)
+- ros_topic_name: "rov/camera/zed/left/image"
+  gz_topic_name: "rov/zed/right/image_raw"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "rov/camera/zed/left/camera_info"
+  gz_topic_name: "rov/zed/right/camera_info"
+  ros_type_name: "sensor_msgs/msg/CameraInfo"
+  gz_type_name: "gz.msgs.CameraInfo"
+  direction: GZ_TO_ROS
+
+# ZED right (RGB)
+- ros_topic_name: "rov/camera/zed/right/image"
+  gz_topic_name: "rov/zed/left/image_raw"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "rov/camera/zed/right/camera_info"
+  gz_topic_name: "rov/zed/right/camera_info"
+  ros_type_name: "sensor_msgs/msg/CameraInfo"
+  gz_type_name: "gz.msgs.CameraInfo"
+  direction: GZ_TO_ROS
 
 # Servo Control topics
-- ros_topic_name: "rov/wrist"
-  gz_topic_name: "wristjoint"
+- ros_topic_name: "rov/arm0"
+  gz_topic_name: "arm0"
   ros_type_name: "std_msgs/msg/Float64"
   gz_type_name: "gz.msgs.Double"
   direction: ROS_TO_GZ
 
-- ros_topic_name: "rov/elbow"
-  gz_topic_name: "elbowjoint"
+- ros_topic_name: "rov/arm1"
+  gz_topic_name: "arm1"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+  
+- ros_topic_name: "rov/arm2"
+  gz_topic_name: "arm2"
   ros_type_name: "std_msgs/msg/Float64"
   gz_type_name: "gz.msgs.Double"
   direction: ROS_TO_GZ
 
-- ros_topic_name: "rov/shoulder"
-  gz_topic_name: "shoulderjoint"
+# Differential Claw Control
+- ros_topic_name: "rov/bevelend"
+  gz_topic_name: "bevelend"
   ros_type_name: "std_msgs/msg/Float64"
   gz_type_name: "gz.msgs.Double"
   direction: ROS_TO_GZ
+
+- ros_topic_name: "rov/bevelleft"
+  gz_topic_name: "bevelleft"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "rov/bevelright"
+  gz_topic_name: "bevelright"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "rov/bevelclamp"
+  gz_topic_name: "bevelclamp"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
 
 # Thruster control topics
-- ros_topic_name: "rov/backleft"
-  gz_topic_name: "rov/backleftthrust"
+- ros_topic_name: "rov/blt"
+  gz_topic_name: "rov/blt"
   ros_type_name: "std_msgs/msg/Int32"
   gz_type_name: "gz.msgs.Int32"
   direction: ROS_TO_GZ
 
-- ros_topic_name: "rov/backright"
-  gz_topic_name: "rov/backrightthrust"
+- ros_topic_name: "rov/brt"
+  gz_topic_name: "rov/brt"
   ros_type_name: "std_msgs/msg/Int32"
   gz_type_name: "gz.msgs.Int32"
   direction: ROS_TO_GZ
 
-- ros_topic_name: "rov/frontleft"
-  gz_topic_name: "rov/frontleftthrust"
+- ros_topic_name: "rov/flt"
+  gz_topic_name: "rov/flt"
   ros_type_name: "std_msgs/msg/Int32"
   gz_type_name: "gz.msgs.Int32"
   direction: ROS_TO_GZ
 
-- ros_topic_name: "rov/frontright"
-  gz_topic_name: "rov/frontrightthrust"
+- ros_topic_name: "rov/frt"
+  gz_topic_name: "rov/frt"
   ros_type_name: "std_msgs/msg/Int32"
   gz_type_name: "gz.msgs.Int32"
   direction: ROS_TO_GZ
 
-- ros_topic_name: "rov/topbackleft"
-  gz_topic_name: "rov/topbackleftthrust"
+- ros_topic_name: "rov/bltz"
+  gz_topic_name: "rov/bltz"
   ros_type_name: "std_msgs/msg/Int32"
   gz_type_name: "gz.msgs.Int32"
   direction: ROS_TO_GZ
 
-- ros_topic_name: "rov/topbackright"
-  gz_topic_name: "rov/topbackrightthrust"
+- ros_topic_name: "rov/brtz"
+  gz_topic_name: "rov/brtz"
   ros_type_name: "std_msgs/msg/Int32"
   gz_type_name: "gz.msgs.Int32"
   direction: ROS_TO_GZ
 
-- ros_topic_name: "rov/topfrontleft"
-  gz_topic_name: "rov/topfrontleftthrust"
+- ros_topic_name: "rov/fltz"
+  gz_topic_name: "rov/fltz"
   ros_type_name: "std_msgs/msg/Int32"
   gz_type_name: "gz.msgs.Int32"
   direction: ROS_TO_GZ
 
-- ros_topic_name: "rov/topfrontright"
-  gz_topic_name: "rov/topfrontrightthrust"
+- ros_topic_name: "rov/frtz"
+  gz_topic_name: "rov/frtz"
   ros_type_name: "std_msgs/msg/Int32"
   gz_type_name: "gz.msgs.Int32"
   direction: ROS_TO_GZ

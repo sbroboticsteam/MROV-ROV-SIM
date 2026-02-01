@@ -1,144 +1,177 @@
 <?xml version="1.0" ?>
 <robot name="rov" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-<transmission name="backrightpropjoint_tran">
+<transmission name="FrontRightThrust_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="backrightpropjoint">
+  <joint name="FrontRightThrust">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="backrightpropjoint_actr">
+  <actuator name="FrontRightThrust_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="backleftpropjoint_tran">
+<transmission name="BackRightThrust_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="backleftpropjoint">
+  <joint name="BackRightThrust">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="backleftpropjoint_actr">
+  <actuator name="BackRightThrust_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="frontleftpropjoint_tran">
+<transmission name="BackLeftThrust_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="frontleftpropjoint">
+  <joint name="BackLeftThrust">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="frontleftpropjoint_actr">
+  <actuator name="BackLeftThrust_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="frontrightpropjoint_tran">
+<transmission name="FrontLeftThrust_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="frontrightpropjoint">
+  <joint name="FrontLeftThrust">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="frontrightpropjoint_actr">
+  <actuator name="FrontLeftThrust_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="topfrontrightpropjoint_tran">
+<transmission name="TFrontRightThrust_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="topfrontrightpropjoint">
+  <joint name="TFrontRightThrust">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="topfrontrightpropjoint_actr">
+  <actuator name="TFrontRightThrust_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="topfrontleftpropjoint_tran">
+<transmission name="TBackRightThrust_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="topfrontleftpropjoint">
+  <joint name="TBackRightThrust">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="topfrontleftpropjoint_actr">
+  <actuator name="TBackRightThrust_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="topbackleftpropjoint_tran">
+<transmission name="TBackLeftThrust_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="topbackleftpropjoint">
+  <joint name="TBackLeftThrust">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="topbackleftpropjoint_actr">
+  <actuator name="TBackLeftThrust_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="topbackrightpropjoint_tran">
+<transmission name="TFrontLeftThrust_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="topbackrightpropjoint">
+  <joint name="TFrontLeftThrust">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="topbackrightpropjoint_actr">
+  <actuator name="TFrontLeftThrust_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="shoulderjoint_tran">
+<transmission name="arm0_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="shoulderjoint">
+  <joint name="arm0">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="shoulderjoint_actr">
+  <actuator name="arm0_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="elbowjoint_tran">
+<transmission name="arm1_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="elbowjoint">
+  <joint name="arm1">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="elbowjoint_actr">
+  <actuator name="arm1_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="wristjoint_tran">
+<transmission name="BevelEnd_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="wristjoint">
+  <joint name="BevelEnd">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="wristjoint_actr">
+  <actuator name="BevelEnd_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="leftclawjoint_tran">
+<transmission name="BevelRight_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="leftclawjoint">
+  <joint name="BevelRight">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="leftclawjoint_actr">
+  <actuator name="BevelRight_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rightclawjoint_tran">
+<transmission name="BevelLeft_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rightclawjoint">
+  <joint name="BevelLeft">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rightclawjoint_actr">
+  <actuator name="BevelLeft_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="ZEDSwivelLink_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="ZEDSwivelLink">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="ZEDSwivelLink_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="arm2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="arm2">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="arm2_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="BevelClampJoint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="BevelClampJoint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="BevelClampJoint_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>

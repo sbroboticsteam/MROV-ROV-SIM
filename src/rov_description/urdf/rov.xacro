@@ -6,9 +6,9 @@
 <xacro:include filename="$(find rov_description)/urdf/rov.gazebo" />
 <link name="base_link">
   <inertial>
-    <origin xyz="-0.00884973146778553 -0.2071832362580056 0.0001594860889622284" rpy="0 0 0"/>
-    <mass value="3.294247"/>
-    <inertia ixx="0.151251" iyy="0.28825" izz="0.137021" ixy="0.0" iyz="-0.0" ixz="6.7e-05"/>
+    <origin xyz="-5.6904454281479577e-05 0.002259535915373094 -0.055056343609268456" rpy="0 0 0"/>
+    <mass value="2.647880364444541"/>
+    <inertia ixx="0.097024" iyy="0.140548" izz="0.237555" ixy="-1.6e-05" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -20,967 +20,1107 @@
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <box size="0.6 0.4 0.25"/>
+      <mesh filename="file://$(find rov_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="VerticalThrusterSupportBeams_2">
+<link name="VerticalThrusterBeams_V7_v1__3__1">
   <inertial>
-    <origin xyz="-0.00449028432226567 0.1047212706889887 -0.004490284322260396" rpy="0 0 0"/>
-    <mass value="0.341030"/>
-    <inertia ixx="0.001286" iyy="7.1e-05" izz="0.001286" ixy="0.0" iyz="0.0" ixz="3.1e-05"/>
+    <origin xyz="0.016970218305073115 -0.016970173279726886 0.11591472778502045" rpy="0 0 0"/>
+    <mass value="0.20947204476435513"/>
+    <inertia ixx="0.000871" iyy="0.000871" izz="4.9e-05" ixy="2.2e-05" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.243664 0.207 -0.243664" rpy="0 0 0"/>
+    <origin xyz="0.28025 0.301231 0.054378" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterSupportBeams_2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterBeams_V7_v1__3__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.243664 0.207 -0.243664" rpy="0 0 0"/>
+    <origin xyz="0.28025 0.301231 0.054378" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterSupportBeams_2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterBeams_V7_v1__3__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="VerticalThrusterSupportBeams_1">
+<link name="VerticalThrusterBeams_V7_v1__2__1">
   <inertial>
-    <origin xyz="0.004490284322265392 0.1047212706889887 -0.004490284322267224" rpy="0 0 0"/>
-    <mass value="0.341030"/>
-    <inertia ixx="0.001286" iyy="7.1e-05" izz="0.001286" ixy="-0.0" iyz="0.0" ixz="-3.1e-05"/>
+    <origin xyz="0.01697021830510126 0.01697054739762352 0.11591472778502315" rpy="0 0 0"/>
+    <mass value="0.20947204476435513"/>
+    <inertia ixx="0.000871" iyy="0.000871" izz="4.9e-05" ixy="-2.2e-05" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.243664 0.207 -0.243664" rpy="0 0 0"/>
+    <origin xyz="0.28025 -0.191105 0.054378" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterSupportBeams_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterBeams_V7_v1__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.243664 0.207 -0.243664" rpy="0 0 0"/>
+    <origin xyz="0.28025 -0.191105 0.054378" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterSupportBeams_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterBeams_V7_v1__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="VerticalThrusterSupportBeams_4">
+<link name="VerticalThrusterBeams_V7_v1_1">
   <inertial>
-    <origin xyz="0.004490284322271526 0.10472127068898884 0.004490284322263699" rpy="0 0 0"/>
-    <mass value="0.341030"/>
-    <inertia ixx="0.001286" iyy="7.1e-05" izz="0.001286" ixy="-0.0" iyz="-0.0" ixz="3.1e-05"/>
+    <origin xyz="0.016970360338689428 -0.016971031246166945 0.11591472778502301" rpy="0 0 0"/>
+    <mass value="0.20947204476435513"/>
+    <inertia ixx="0.000871" iyy="0.000871" izz="4.9e-05" ixy="2.2e-05" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.243664 0.207 0.243664" rpy="0 0 0"/>
+    <origin xyz="-0.246168 -0.225188 0.054378" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterSupportBeams_4.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterBeams_V7_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.243664 0.207 0.243664" rpy="0 0 0"/>
+    <origin xyz="-0.246168 -0.225188 0.054378" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterSupportBeams_4.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterBeams_V7_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="VerticalThrusterSupportBeams_3">
+<link name="VerticalThrusterBeams_V7_v1__1__1">
   <inertial>
-    <origin xyz="-0.004490284322259119 0.10472127068898884 0.004490284322270055" rpy="0 0 0"/>
-    <mass value="0.341030"/>
-    <inertia ixx="0.001286" iyy="7.1e-05" izz="0.001286" ixy="0.0" iyz="-0.0" ixz="-3.1e-05"/>
+    <origin xyz="0.01697036033866145 0.01697040536400729 0.11591472778502049" rpy="0 0 0"/>
+    <mass value="0.20947204476435513"/>
+    <inertia ixx="0.000871" iyy="0.000871" izz="4.9e-05" ixy="-2.2e-05" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.243664 0.207 0.243664" rpy="0 0 0"/>
+    <origin xyz="-0.246168 0.335313 0.054378" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterSupportBeams_3.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterBeams_V7_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.243664 0.207 0.243664" rpy="0 0 0"/>
+    <origin xyz="-0.246168 0.335313 0.054378" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterSupportBeams_3.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/VerticalThrusterBeams_V7_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="Handles_2">
+<link name="T200_v2__7__1">
   <inertial>
-    <origin xyz="-0.08600000000000418 0.023514887456752447 0.0" rpy="0 0 0"/>
-    <mass value="0.237318"/>
-    <inertia ixx="3.9e-05" iyy="0.000228" izz="0.000264" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+    <origin xyz="-0.041484995525996715 -0.026847398511978038 5.272863101965508e-06" rpy="0 0 0"/>
+    <mass value="0.15063623141000587"/>
+    <inertia ixx="0.000154" iyy="0.000156" izz="0.000141" ixy="-1.8e-05" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.086 -0.00635 0.318" rpy="0 0 0"/>
+    <origin xyz="0.26777 0.322691 -0.057622" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/Handles_2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2__7__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.086 -0.00635 0.318" rpy="0 0 0"/>
+    <origin xyz="0.26777 0.322691 -0.057622" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/Handles_2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2__7__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="Handles_1">
+<link name="T200_v2__1__1">
   <inertial>
-    <origin xyz="-0.08600000000000434 0.023514887456752447 0.0" rpy="0 0 0"/>
-    <mass value="0.237318"/>
-    <inertia ixx="3.9e-05" iyy="0.000228" izz="0.000264" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+    <origin xyz="0.04148557416975596 -0.026846819868221572 -5.421818513859367e-06" rpy="0 0 0"/>
+    <mass value="0.15063623141000587"/>
+    <inertia ixx="0.000154" iyy="0.000156" izz="0.000141" ixy="1.8e-05" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.086 -0.00635 -0.318" rpy="0 0 0"/>
+    <origin xyz="-0.267628 0.322833 -0.057622" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/Handles_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.086 -0.00635 -0.318" rpy="0 0 0"/>
+    <origin xyz="-0.267628 0.322833 -0.057622" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/Handles_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="propbackright_1">
+<link name="T200_v2_1">
   <inertial>
-    <origin xyz="-0.012365898764221173 -3.2044554445498363e-06 -0.012368635677551754" rpy="0 0 0"/>
-    <mass value="0.008653"/>
-    <inertia ixx="3e-06" iyy="2e-06" izz="3e-06" ixy="0.0" iyz="-0.0" ixz="1e-06"/>
+    <origin xyz="-0.04148499545811157 0.026846772697733723 -5.421818510674414e-06" rpy="0 0 0"/>
+    <mass value="0.15063623141000587"/>
+    <inertia ixx="0.000154" iyy="0.000156" izz="0.000141" ixy="1.8e-05" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.25586 0.102 -0.300764" rpy="0 0 0"/>
+    <origin xyz="0.26777 -0.212566 -0.057622" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/propbackright_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.25586 0.102 -0.300764" rpy="0 0 0"/>
+    <origin xyz="0.26777 -0.212566 -0.057622" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/propbackright_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="propbackleft_1">
+<link name="T200_v2__4__1">
   <inertial>
-    <origin xyz="-0.01236878771037464 -3.2044554437726802e-06 0.012365746731409555" rpy="0 0 0"/>
-    <mass value="0.008653"/>
-    <inertia ixx="3e-06" iyy="2e-06" izz="3e-06" ixy="-0.0" iyz="-0.0" ixz="-1e-06"/>
+    <origin xyz="0.04148557410187448 0.026847194053971513 5.2728631047480046e-06" rpy="0 0 0"/>
+    <mass value="0.15063623141000587"/>
+    <inertia ixx="0.000154" iyy="0.000156" izz="0.000141" ixy="-1.8e-05" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.25586 0.102 0.300764" rpy="0 0 0"/>
+    <origin xyz="-0.267628 -0.212707 -0.057622" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/propbackleft_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2__4__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.25586 0.102 0.300764" rpy="0 0 0"/>
+    <origin xyz="-0.267628 -0.212707 -0.057622" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/propbackleft_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2__4__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="propfrontleft_1">
+<link name="T200_v2__5__1">
   <inertial>
-    <origin xyz="0.012365898764223893 -3.2044554439669692e-06 0.012368635677550976" rpy="0 0 0"/>
-    <mass value="0.008653"/>
-    <inertia ixx="3e-06" iyy="2e-06" izz="3e-06" ixy="-0.0" iyz="0.0" ixz="1e-06"/>
+    <origin xyz="0.03417021897769523 0.03416226511097392 -0.019850695382876038" rpy="0 0 0"/>
+    <mass value="0.15063623141000587"/>
+    <inertia ixx="0.000139" iyy="0.000139" izz="0.000173" ixy="-2e-06" iyz="1e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.25586 0.102 0.300764" rpy="0 0 0"/>
+    <origin xyz="0.25879 0.313711 -0.107122" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/propfrontleft_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2__5__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.25586 0.102 0.300764" rpy="0 0 0"/>
+    <origin xyz="0.25879 0.313711 -0.107122" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/propfrontleft_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2__5__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="propfrontright_1">
+<link name="T200_v2__2__1">
   <inertial>
-    <origin xyz="0.012368787710376472 -3.204455443467369e-06 -0.012365746731402838" rpy="0 0 0"/>
-    <mass value="0.008653"/>
-    <inertia ixx="3e-06" iyy="2e-06" izz="3e-06" ixy="0.0" iyz="0.0" ixz="-1e-06"/>
+    <origin xyz="-0.03416207805203947 0.034169406036629324 -0.01985069538287583" rpy="0 0 0"/>
+    <mass value="0.15063623141000587"/>
+    <inertia ixx="0.000139" iyy="0.000139" izz="0.000173" ixy="2e-06" iyz="1e-06" ixz="-1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.25586 0.102 -0.300764" rpy="0 0 0"/>
+    <origin xyz="-0.258648 0.313852 -0.107122" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/propfrontright_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.25586 0.102 -0.300764" rpy="0 0 0"/>
+    <origin xyz="-0.258648 0.313852 -0.107122" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/propfrontright_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="proptopfrontright_1">
+<link name="T200_v2__6__1">
   <inertial>
-    <origin xyz="4.065704311606577e-06 0.017490034130872245 -4.6608003942405496e-07" rpy="0 0 0"/>
-    <mass value="0.008653"/>
-    <inertia ixx="2e-06" iyy="3e-06" izz="2e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+    <origin xyz="-0.03416964033393266 -0.034162469636867976 -0.019850695382873748" rpy="0 0 0"/>
+    <mass value="0.15063623141000587"/>
+    <inertia ixx="0.000139" iyy="0.000139" izz="0.000173" ixy="-2e-06" iyz="-1e-06" ixz="-1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.200035 0.076752 -0.200035" rpy="0 0 0"/>
+    <origin xyz="-0.258648 -0.203727 -0.107122" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/proptopfrontright_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2__6__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.200035 0.076752 -0.200035" rpy="0 0 0"/>
+    <origin xyz="-0.258648 -0.203727 -0.107122" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/proptopfrontright_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2__6__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="proptopfrontleft_1">
+<link name="T200_v2__3__1">
   <inertial>
-    <origin xyz="4.065704307693041e-06 0.01749003413087242 -1.1767581619970269e-06" rpy="0 0 0"/>
-    <mass value="0.008653"/>
-    <inertia ixx="2e-06" iyy="3e-06" izz="2e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+    <origin xyz="0.03416265669580232 -0.034169453274998735 -0.019850695382873762" rpy="0 0 0"/>
+    <mass value="0.15063623141000587"/>
+    <inertia ixx="0.000139" iyy="0.000139" izz="0.000173" ixy="2e-06" iyz="-1e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.200035 0.076752 0.200035" rpy="0 0 0"/>
+    <origin xyz="0.25879 -0.203585 -0.107122" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/proptopfrontleft_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2__3__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.200035 0.076752 0.200035" rpy="0 0 0"/>
+    <origin xyz="0.25879 -0.203585 -0.107122" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/proptopfrontleft_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200_v2__3__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="proptopbackleft_1">
+<link name="ChassisTopPlate_V7_v1_1">
   <inertial>
-    <origin xyz="3.3550261890058497e-06 0.01749003413087237 -1.176758154003421e-06" rpy="0 0 0"/>
-    <mass value="0.008653"/>
-    <inertia ixx="2e-06" iyy="3e-06" izz="2e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+    <origin xyz="-0.28057898123926245 -0.18201082719609715 0.0006796756645728319" rpy="0 0 0"/>
+    <mass value="2.495845651345511"/>
+    <inertia ixx="0.095334" iyy="0.139123" izz="0.234441" ixy="-0.00017" iyz="1e-06" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.200035 0.076752 0.200035" rpy="0 0 0"/>
+    <origin xyz="-0.280109 -0.191246 -0.169622" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/proptopbackleft_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/ChassisTopPlate_V7_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.200035 0.076752 0.200035" rpy="0 0 0"/>
+    <origin xyz="-0.280109 -0.191246 -0.169622" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/proptopbackleft_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/ChassisTopPlate_V7_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="proptopbackright_1">
+<link name="T200Prop_v1_1">
   <inertial>
-    <origin xyz="3.3550261931969416e-06 0.017490034130872203 -4.660800397293663e-07" rpy="0 0 0"/>
-    <mass value="0.008653"/>
-    <inertia ixx="2e-06" iyy="3e-06" izz="2e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+    <origin xyz="0.012365313819343415 -0.01236961207162901 1.968315707347179e-06" rpy="0 0 0"/>
+    <mass value="0.008326303172342037"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="2e-06" ixy="-1e-06" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.200035 0.076752 -0.200035" rpy="0 0 0"/>
+    <origin xyz="0.326937 0.336954 -0.057622" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/proptopbackright_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.200035 0.076752 -0.200035" rpy="0 0 0"/>
+    <origin xyz="0.326937 0.336954 -0.057622" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/proptopbackright_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="T200Prop_v1__2__1">
+  <inertial>
+    <origin xyz="0.012369391079475378 0.012364909064998736 1.9683157096161974e-06" rpy="0 0 0"/>
+    <mass value="0.008326303172342037"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="2e-06" ixy="1e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.32487 -0.224762 -0.057622" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.32487 -0.224762 -0.057622" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="T200Prop_v1__1__1">
+  <inertial>
+    <origin xyz="-0.012365280651362887 0.012369862205586057 1.9683157093455805e-06" rpy="0 0 0"/>
+    <mass value="0.008326303172342037"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="2e-06" ixy="-1e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.324729 -0.224903 -0.057622" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.324729 -0.224903 -0.057622" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="T200Prop_v1__3__1">
+  <inertial>
+    <origin xyz="-0.012369812367830857 -0.01236495623548678 1.9683157064520618e-06" rpy="0 0 0"/>
+    <mass value="0.008326303172342037"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="2e-06" ixy="1e-06" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.324729 0.335029 -0.057622" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.324729 0.335029 -0.057622" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="T200Prop_v1__4__1">
+  <inertial>
+    <origin xyz="4.0006286275429126e-07 -3.523306314867636e-06 0.017489959653166715" rpy="0 0 0"/>
+    <mass value="0.008326303172342037"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="3e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.224141 0.279063 -0.06587" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.224141 0.279063 -0.06587" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="T200Prop_v1__5__1">
+  <inertial>
+    <origin xyz="4.000628633649139e-07 -3.5233063141737464e-06 0.017489959653168907" rpy="0 0 0"/>
+    <mass value="0.008326303172342037"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="3e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.224141 -0.168937 -0.06587" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.224141 -0.168937 -0.06587" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="T200Prop_v1__6__1">
+  <inertial>
+    <origin xyz="8.214191013489192e-07 -4.101950076940142e-06 0.017489959653168977" rpy="0 0 0"/>
+    <mass value="0.008326303172342037"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="3e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.224 -0.169079 -0.06587" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.224 -0.169079 -0.06587" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="T200Prop_v1__7__1">
+  <inertial>
+    <origin xyz="-3.710365249293135e-06 -1.0557164039082245e-06 0.017489959653166756" rpy="0 0 0"/>
+    <mass value="0.008326303172342037"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="3e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.224 0.279204 -0.06587" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.224 0.279204 -0.06587" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/T200Prop_v1__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="igusbearningbase_v1_1">
+  <inertial>
+    <origin xyz="-3.547380513283578e-17 1.870589348140772e-07 0.007881230057328437" rpy="0 0 0"/>
+    <mass value="0.0480721636553659"/>
+    <inertia ixx="3.1e-05" iyy="3.1e-05" izz="5.9e-05" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.103063 0.051878" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/igusbearningbase_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.103063 0.051878" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/igusbearningbase_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="igusbearningtop_v1_1">
+  <inertial>
+    <origin xyz="-5.993783775443743e-17 1.8705897096571444e-07 0.005240958470349631" rpy="0 0 0"/>
+    <mass value="0.0663861004889516"/>
+    <inertia ixx="8.4e-05" iyy="8.4e-05" izz="0.000167" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.103063 0.047878" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/igusbearningtop_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.103063 0.047878" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/igusbearningtop_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ArmBasePlate_v1_1">
+  <inertial>
+    <origin xyz="5.144829189056676e-15 1.870589349250995e-07 0.0031749255222953757" rpy="0 0 0"/>
+    <mass value="0.10474120539252829"/>
+    <inertia ixx="0.000355" iyy="0.000195" izz="0.000549" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.103063 0.035878" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/ArmBasePlate_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.103063 0.035878" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/ArmBasePlate_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Arm_Base_Back_Plate_v1_1">
+  <inertial>
+    <origin xyz="-2.1406090046397912e-17 -0.0031748129410668 0.0266889626123002" rpy="0 0 0"/>
+    <mass value="0.04056908906002407"/>
+    <inertia ixx="1e-05" iyy="5.8e-05" izz="4.9e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.015563 0.029528" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/Arm_Base_Back_Plate_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.015563 0.029528" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/Arm_Base_Back_Plate_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="shoulderJoint_v1_1">
+  <inertial>
+    <origin xyz="0.06371362420431569 -0.04071132812017221 0.05468797980138958" rpy="0 0 0"/>
+    <mass value="0.24661273990042115"/>
+    <inertia ixx="0.000769" iyy="0.001147" izz="0.001441" ixy="3e-06" iyz="2.1e-05" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0635 0.066063 0.029528" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/shoulderJoint_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0635 0.066063 0.029528" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/shoulderJoint_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ArmShoulder_v1_1">
+  <inertial>
+    <origin xyz="0.06044575334915728 -0.0544702626243552 0.19001398927529556" rpy="0 0 0"/>
+    <mass value="0.6959521995357091"/>
+    <inertia ixx="0.011112" iyy="0.010823" izz="0.003852" ixy="-3.1e-05" iyz="0.003461" ixz="3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.060325 0.155399 -0.045472" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/ArmShoulder_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.060325 0.155399 -0.045472" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/ArmShoulder_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BevelGearTop_v1_1">
+  <inertial>
+    <origin xyz="1.8040256788420805e-14 -4.8431602672760476e-08 0.0017365276376592187" rpy="0 0 0"/>
+    <mass value="0.268359934613969"/>
+    <inertia ixx="5.9e-05" iyy="5.9e-05" izz="8.4e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.003086 0.487454 -0.12486" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/BevelGearTop_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.003086 0.487454 -0.12486" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/BevelGearTop_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BevelGearRight_v1_1">
+  <inertial>
+    <origin xyz="0.0075157596117449744 -4.843148970756772e-08 3.5682241399104253e-07" rpy="0 0 0"/>
+    <mass value="0.1615477384857512"/>
+    <inertia ixx="8.2e-05" iyy="4.9e-05" izz="4.9e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.037783 0.487454 -0.090175" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/BevelGearRight_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.037783 0.487454 -0.090175" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/BevelGearRight_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BevelGearLeft_v1_1">
+  <inertial>
+    <origin xyz="-0.007515776647756149 -4.843156414802152e-08 3.568224116318186e-07" rpy="0 0 0"/>
+    <mass value="0.16154823300094023"/>
+    <inertia ixx="8.2e-05" iyy="4.9e-05" izz="4.9e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.031611 0.487454 -0.090175" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/BevelGearLeft_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.031611 0.487454 -0.090175" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/BevelGearLeft_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CameraZED_v1_1">
+  <inertial>
+    <origin xyz="-0.00014792900642126268 -0.0377347034595403 -0.05604326869326999" rpy="0 0 0"/>
+    <mass value="0.31543773466976427"/>
+    <inertia ixx="0.000788" iyy="0.001927" izz="0.001694" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.150063 0.058228" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/CameraZED_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.150063 0.058228" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/CameraZED_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<!-- === Stereo camera scaffold attached to CameraZED_v1_1 === -->
+<xacro:property name="zed_baseline" value="0.12"/> <!-- meters; adjust later -->
+
+<link name="zed_left_cam_link">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.001"/>
+    <inertia ixx="1e-6" iyy="1e-6" izz="1e-6" ixy="0" ixz="0" iyz="0"/>
+  </inertial>
+</link>
+
+<link name="zed_right_cam_link">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.001"/>
+    <inertia ixx="1e-6" iyy="1e-6" izz="1e-6" ixy="0" ixz="0" iyz="0"/>
+  </inertial>
+</link>
+
+<!-- Left/right offsets: pick the axis that matches your ZED model orientation.
+     Commonly baseline is along +Y/-Y in the camera body frame, but you can change later. -->
+<joint name="zed_left_cam_joint" type="fixed">
+  <parent link="CameraZED_v1_1"/>
+  <child link="zed_left_cam_link"/>
+  <origin xyz="${zed_baseline/2} -0.077 -0.056043" rpy="0 0 -1.5708"/>
+</joint>
+
+<joint name="zed_right_cam_joint" type="fixed">
+  <parent link="CameraZED_v1_1"/>
+  <child link="zed_right_cam_link"/>
+  <origin xyz="-${zed_baseline/2} -0.077 -0.056043" rpy="0 0 -1.5708"/>
+</joint>
+
+<link name="zed_left_optical_frame"/>
+<link name="zed_right_optical_frame"/>
+
+<joint name="zed_left_optical_joint" type="fixed">
+  <parent link="zed_left_cam_link"/>
+  <child link="zed_left_optical_frame"/>
+  <origin xyz="0 0 0" rpy="-1.57079632679 0 -1.57079632679"/>
+</joint>
+
+<joint name="zed_right_optical_joint" type="fixed">
+  <parent link="zed_right_cam_link"/>
+  <child link="zed_right_optical_frame"/>
+  <origin xyz="0 0 0" rpy="-1.57079632679 0 -1.57079632679"/>
+</joint>
+
+
+<link name="CameraUSB_v1__1__1">
+  <inertial>
+    <origin xyz="0.05600860450193623 -0.011905813920191188 -0.02050751236847534" rpy="0 0 0"/>
+    <mass value="0.11383217436720357"/>
+    <inertia ixx="0.000138" iyy="0.000163" izz="0.000171" ixy="-2e-06" iyz="2.3e-05" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.19467 0.362093 -0.170297" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/CameraUSB_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.19467 0.362093 -0.170297" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/CameraUSB_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CameraUSB_v1_1">
+  <inertial>
+    <origin xyz="-0.024101663769358267 -0.01123978617139093 -0.04177963146642813" rpy="0 0 0"/>
+    <mass value="0.11383217436720357"/>
+    <inertia ixx="0.000181" iyy="0.000147" izz="0.000144" ixy="2e-05" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.18911 0.355404 -0.167122" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/CameraUSB_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.18911 0.355404 -0.167122" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/CameraUSB_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FrontArm_v1_1">
+  <inertial>
+    <origin xyz="-0.045490204362997375 -0.11246854164621328 -0.10175599315925055" rpy="0 0 0"/>
+    <mass value="0.42090374296931804"/>
+    <inertia ixx="0.007083" iyy="0.006146" izz="0.002439" ixy="6e-06" iyz="-0.002163" ixz="1.7e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.044132 0.301979 -0.417647" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/FrontArm_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.044132 0.301979 -0.417647" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/FrontArm_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="DifferentialFrame_v1_1">
+  <inertial>
+    <origin xyz="0.036976752901442894 -4.843155987366288e-08 0.02107742200331042" rpy="0 0 0"/>
+    <mass value="0.018718278848415766"/>
+    <inertia ixx="1.1e-05" iyy="2.6e-05" izz="2.4e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.040958 0.487454 -0.090175" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/DifferentialFrame_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.040958 0.487454 -0.090175" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/DifferentialFrame_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CameraInsta360_v1_1">
+  <inertial>
+    <origin xyz="-2.142730437526552e-14 -4.909267437014364e-14 0.030723525857098644" rpy="0 0 0"/>
+    <mass value="0.19504159403515295"/>
+    <inertia ixx="0.000176" iyy="0.000176" izz="0.000111" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.22 0.06 -0.173472" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/CameraInsta360_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.22 0.06 -0.173472" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rov_description)/meshes/CameraInsta360_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
 <link name="Ebox_v1_1">
   <inertial>
-    <origin xyz="0.1419635000000286 0.08575276315482112 0.12499300000000114" rpy="0 0 0"/>
-    <mass value="7.975075"/>
-    <inertia ixx="0.034054" iyy="0.049082" izz="0.034054" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+    <origin xyz="2.54663016414047e-14 -0.1275373129410657 0.08575268867711783" rpy="0 0 0"/>
+    <mass value="2.95500253978019"/>
+    <inertia ixx="0.034054" iyy="0.034054" izz="0.049082" ixy="0.0" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.233501 0.204 0.124993" rpy="0 0 0"/>
+    <origin xyz="0.0 -0.274937 0.051878" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find rov_description)/meshes/Ebox_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.233501 0.204 0.124993" rpy="0 0 0"/>
+    <origin xyz="0.0 -0.274937 0.051878" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find rov_description)/meshes/Ebox_v1_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="Rotation_ArmBasePlate_v1_1">
-  <inertial>
-    <origin xyz="-0.04500000000000731 0.09562846640758502 -4.999999958441026e-07" rpy="0 0 0"/>
-    <mass value="0.194902"/>
-    <inertia ixx="0.000871" iyy="0.000269" izz="0.001138" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.335 0.204 0.052862" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/Rotation_ArmBasePlate_v1_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.335 0.204 0.052862" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/Rotation_ArmBasePlate_v1_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="Rotation_ArmBasePlate_v1__1__1">
-  <inertial>
-    <origin xyz="-0.04500000000000837 0.09562846640758497 -4.999999957469581e-07" rpy="0 0 0"/>
-    <mass value="0.194902"/>
-    <inertia ixx="0.000871" iyy="0.000269" izz="0.001138" ixy="0.0" iyz="0.0" ixz="-0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.335 0.204 -0.052863" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/Rotation_ArmBasePlate_v1__1__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.335 0.204 -0.052863" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/Rotation_ArmBasePlate_v1__1__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="PillowBlockMount_v1_1">
-  <inertial>
-    <origin xyz="-0.016000000000067904 -0.025999999999988116 0.004395257122678596" rpy="0 0 0"/>
-    <mass value="0.038613"/>
-    <inertia ixx="8e-06" iyy="5e-06" izz="1.2e-05" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.306 0.076 0.049687" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/PillowBlockMount_v1_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.306 0.076 0.049687" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/PillowBlockMount_v1_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="PillowBlockMount_v1__1__1">
-  <inertial>
-    <origin xyz="0.016000000000073955 -0.0259999999999882 -0.004396257122670222" rpy="0 0 0"/>
-    <mass value="0.038613"/>
-    <inertia ixx="8e-06" iyy="5e-06" izz="1.2e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.274 0.076 -0.049688" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/PillowBlockMount_v1__1__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.274 0.076 -0.049688" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/PillowBlockMount_v1__1__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="V4B_SupportPlate_v1_1">
-  <inertial>
-    <origin xyz="5.525922222582302e-07 -0.07493659975726129 5.001667301232637e-07" rpy="0 0 0"/>
-    <mass value="0.085598"/>
-    <inertia ixx="7.3e-05" iyy="1.6e-05" izz="8.9e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.29 -0.0 0.011338" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/V4B_SupportPlate_v1_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.29 -0.0 0.011338" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/V4B_SupportPlate_v1_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="shoulder_1">
-  <inertial>
-    <origin xyz="-0.09414946806162938 6.653102950542056e-05 0.002887254879548433" rpy="0 0 0"/>
-    <mass value="0.238329"/>
-    <inertia ixx="0.000253" iyy="0.002317" izz="0.00222" ixy="0.0" iyz="-1e-06" ixz="1e-06"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.29 0.102 0.014513" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/shoulder_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.29 0.102 0.014513" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/shoulder_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="elbow_1">
-  <inertial>
-    <origin xyz="0.036504021537288295 0.0010587831807864073 0.024711763155022364" rpy="0 0 0"/>
-    <mass value="0.104132"/>
-    <inertia ixx="2.9e-05" iyy="4e-05" izz="3.9e-05" ixy="-2e-06" iyz="0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.0825 0.102 0.018687" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/elbow_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.0825 0.102 0.018687" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/elbow_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="wrist_1">
-  <inertial>
-    <origin xyz="0.020570162349985127 0.0008209490871033537 -8.376397228182769e-05" rpy="0 0 0"/>
-    <mass value="0.044156"/>
-    <inertia ixx="4e-06" iyy="7e-06" izz="5e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.1515 0.096 -0.005988" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/wrist_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.1515 0.096 -0.005988" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/wrist_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="left_claw_1">
-  <inertial>
-    <origin xyz="0.08354760410561307 -0.005972879878576573 -0.010043597389812697" rpy="0 0 0"/>
-    <mass value="0.032267"/>
-    <inertia ixx="1.3e-05" iyy="0.000195" izz="0.00019" ixy="-0.0" iyz="0.0" ixz="-6e-06"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.1775 0.088 0.004012" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/left_claw_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.1775 0.088 0.004012" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/left_claw_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="right_claw_1">
-  <inertial>
-    <origin xyz="0.07566774937988974 -0.0059640260689888674 0.009495558359122119" rpy="0 0 0"/>
-    <mass value="0.030533"/>
-    <inertia ixx="1.2e-05" iyy="0.000193" izz="0.000188" ixy="0.0" iyz="-0.0" ixz="4e-06"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.1775 0.088 -0.015988" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/right_claw_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.1775 0.088 -0.015988" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/right_claw_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="basefootprintobject_1">
-  <inertial>
-    <origin xyz="3.5334040280136793e-13 -0.0009999999999999731 1.5721235281038994e-15" rpy="0 0 0"/>
-    <mass value="0.0005535274198121317"/>
-    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.0 0.21035 -0.0" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/basefootprintobject_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.0 0.21035 -0.0" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/basefootprintobject_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="TopPlate_1">
-  <inertial>
-    <origin xyz="0.24782424120968954 0.00016204304487000198 -0.2467838984061316" rpy="0 0 0"/>
-    <mass value="3.242845"/>
-    <inertia ixx="0.166436" iyy="0.317863" izz="0.151449" ixy="-1.4e-05" iyz="-5e-06" ixz="-0.001482"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.243664 -0.003 -0.243664" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/TopPlate_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.243664 -0.003 -0.243664" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/TopPlate_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="T200_1">
-  <inertial>
-    <origin xyz="-0.02684279690594965 -0.00950557626176958 0.041487649225129264" rpy="0 0 0"/>
-    <mass value="0.156158"/>
-    <inertia ixx="0.000156" iyy="0.000141" izz="0.000154" ixy="0.0" iyz="0.0" ixz="1.8e-05"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.243664 0.0925 -0.243664" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.243664 0.0925 -0.243664" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="T200_2">
-  <inertial>
-    <origin xyz="0.03416973472258347 -0.019855474384367508 -0.03416184869756059" rpy="0 0 0"/>
-    <mass value="0.156158"/>
-    <inertia ixx="0.000139" iyy="0.000173" izz="0.000139" ixy="1e-06" iyz="-1e-06" ixz="2e-06"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.234684 0.0355 -0.234684" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_2.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.234684 0.0355 -0.234684" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_2.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="T200_7">
-  <inertial>
-    <origin xyz="0.026842796905951205 -0.009494423738229812 0.04148764922513448" rpy="0 0 0"/>
-    <mass value="0.156158"/>
-    <inertia ixx="0.000156" iyy="0.000141" izz="0.000154" ixy="0.0" iyz="-0.0" ixz="-1.8e-05"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.243664 0.0925 -0.243664" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_7.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.243664 0.0925 -0.243664" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_7.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="T200_3">
-  <inertial>
-    <origin xyz="-0.03416184869755892 -0.019855474384367487 -0.03416973472257842" rpy="0 0 0"/>
-    <mass value="0.156158"/>
-    <inertia ixx="0.000139" iyy="0.000173" izz="0.000139" ixy="-1e-06" iyz="-1e-06" ixz="-2e-06"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.234684 0.0355 -0.234684" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_3.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.234684 0.0355 -0.234684" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_3.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="T200_8">
-  <inertial>
-    <origin xyz="0.026842796905956756 -0.009505576261768914 -0.041487649225126155" rpy="0 0 0"/>
-    <mass value="0.156158"/>
-    <inertia ixx="0.000156" iyy="0.000141" izz="0.000154" ixy="-0.0" iyz="-0.0" ixz="1.8e-05"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.243664 0.0925 0.243664" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_8.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.243664 0.0925 0.243664" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_8.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="T200_4">
-  <inertial>
-    <origin xyz="-0.03416973472257784 -0.019855474384367307 0.034161848697562724" rpy="0 0 0"/>
-    <mass value="0.156158"/>
-    <inertia ixx="0.000139" iyy="0.000173" izz="0.000139" ixy="-1e-06" iyz="1e-06" ixz="2e-06"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.234684 0.0355 0.234684" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_4.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.234684 0.0355 0.234684" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_4.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="T200_6">
-  <inertial>
-    <origin xyz="-0.0268427969059446 -0.009494423738229896 -0.04148764922513154" rpy="0 0 0"/>
-    <mass value="0.156158"/>
-    <inertia ixx="0.000156" iyy="0.000141" izz="0.000154" ixy="-0.0" iyz="0.0" ixz="-1.8e-05"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.243664 0.0925 0.243664" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_6.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.243664 0.0925 0.243664" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_6.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="T200_5">
-  <inertial>
-    <origin xyz="0.034161848697564196 -0.019855474384367335 0.03416973472258247" rpy="0 0 0"/>
-    <mass value="0.156158"/>
-    <inertia ixx="0.000139" iyy="0.000173" izz="0.000139" ixy="1e-06" iyz="1e-06" ixz="-2e-06"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.234684 0.0355 0.234684" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_5.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.234684 0.0355 0.234684" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find rov_description)/meshes/T200_5.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
 <joint name="Rigid 1" type="fixed">
-  <origin xyz="0.243664 -0.207 0.243664" rpy="0 0 0"/>
+  <origin xyz="-0.28025 -0.301231 -0.054378" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="VerticalThrusterSupportBeams_2"/>
+  <child link="VerticalThrusterBeams_V7_v1__3__1"/>
 </joint>
 
 <joint name="Rigid 2" type="fixed">
-  <origin xyz="-0.243664 -0.207 0.243664" rpy="0 0 0"/>
+  <origin xyz="-0.28025 0.191105 -0.054378" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="VerticalThrusterSupportBeams_1"/>
+  <child link="VerticalThrusterBeams_V7_v1__2__1"/>
 </joint>
 
 <joint name="Rigid 3" type="fixed">
-  <origin xyz="-0.243664 -0.207 -0.243664" rpy="0 0 0"/>
+  <origin xyz="0.246168 0.225188 -0.054378" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="VerticalThrusterSupportBeams_4"/>
+  <child link="VerticalThrusterBeams_V7_v1_1"/>
 </joint>
 
 <joint name="Rigid 4" type="fixed">
-  <origin xyz="0.243664 -0.207 -0.243664" rpy="0 0 0"/>
+  <origin xyz="0.246168 -0.335313 -0.054378" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="VerticalThrusterSupportBeams_3"/>
+  <child link="VerticalThrusterBeams_V7_v1__1__1"/>
 </joint>
 
-<joint name="Rigid 17" type="fixed">
-  <origin xyz="0.329664 0.00335 -0.561664" rpy="0 0 0"/>
-  <parent link="TopPlate_1"/>
-  <child link="Handles_2"/>
+<joint name="Rigid 5" type="fixed">
+  <origin xyz="0.01248 -0.02146 0.112" rpy="0 0 0"/>
+  <parent link="VerticalThrusterBeams_V7_v1__3__1"/>
+  <child link="T200_v2__7__1"/>
 </joint>
 
-<joint name="Rigid 18" type="fixed">
-  <origin xyz="0.329664 0.00335 0.074336" rpy="0 0 0"/>
-  <parent link="TopPlate_1"/>
-  <child link="Handles_1"/>
+<joint name="Rigid 6" type="fixed">
+  <origin xyz="0.02146 0.01248 0.112" rpy="0 0 0"/>
+  <parent link="VerticalThrusterBeams_V7_v1__1__1"/>
+  <child link="T200_v2__1__1"/>
 </joint>
 
-<joint name="backrightpropjoint" type="continuous">
-  <origin xyz="-0.012196 -0.0095 0.0571" rpy="0 0 0"/>
-  <parent link="T200_1"/>
-  <child link="propbackright_1"/>
-  <axis xyz="-0.707107 0.0 -0.707107"/>
+<joint name="Rigid 7" type="fixed">
+  <origin xyz="0.01248 0.021461 0.112" rpy="0 0 0"/>
+  <parent link="VerticalThrusterBeams_V7_v1__2__1"/>
+  <child link="T200_v2_1"/>
 </joint>
 
-<joint name="backleftpropjoint" type="continuous">
-  <origin xyz="-0.012196 -0.0095 -0.0571" rpy="0 0 0"/>
-  <parent link="T200_6"/>
-  <child link="propbackleft_1"/>
-  <axis xyz="-0.707107 -0.0 0.707107"/>
+<joint name="Rigid 8" type="fixed">
+  <origin xyz="0.02146 -0.012481 0.112" rpy="0 0 0"/>
+  <parent link="VerticalThrusterBeams_V7_v1_1"/>
+  <child link="T200_v2__4__1"/>
 </joint>
 
-<joint name="frontleftpropjoint" type="continuous">
-  <origin xyz="0.012196 -0.0095 -0.0571" rpy="0 0 0"/>
-  <parent link="T200_8"/>
-  <child link="propfrontleft_1"/>
-  <axis xyz="0.707107 0.0 0.707107"/>
+<joint name="Rigid 9" type="fixed">
+  <origin xyz="0.02146 -0.01248 0.1615" rpy="0 0 0"/>
+  <parent link="VerticalThrusterBeams_V7_v1__3__1"/>
+  <child link="T200_v2__5__1"/>
 </joint>
 
-<joint name="frontrightpropjoint" type="continuous">
-  <origin xyz="0.012196 -0.0095 0.0571" rpy="0 0 0"/>
-  <parent link="T200_7"/>
-  <child link="propfrontright_1"/>
-  <axis xyz="0.707107 -0.0 -0.707107"/>
+<joint name="Rigid 10" type="fixed">
+  <origin xyz="0.01248 0.021461 0.1615" rpy="0 0 0"/>
+  <parent link="VerticalThrusterBeams_V7_v1__1__1"/>
+  <child link="T200_v2__2__1"/>
 </joint>
 
-<joint name="topfrontrightpropjoint" type="continuous">
-  <origin xyz="-0.034649 -0.041252 -0.034649" rpy="0 0 0"/>
-  <parent link="T200_3"/>
-  <child link="proptopfrontright_1"/>
-  <axis xyz="-0.0 1.0 -0.0"/>
+<joint name="Rigid 11" type="fixed">
+  <origin xyz="0.01248 -0.021461 0.1615" rpy="0 0 0"/>
+  <parent link="VerticalThrusterBeams_V7_v1_1"/>
+  <child link="T200_v2__6__1"/>
 </joint>
 
-<joint name="topfrontleftpropjoint" type="continuous">
-  <origin xyz="-0.034649 -0.041252 0.034649" rpy="0 0 0"/>
-  <parent link="T200_4"/>
-  <child link="proptopfrontleft_1"/>
-  <axis xyz="-0.0 1.0 0.0"/>
+<joint name="Rigid 12" type="fixed">
+  <origin xyz="0.02146 0.01248 0.1615" rpy="0 0 0"/>
+  <parent link="VerticalThrusterBeams_V7_v1__2__1"/>
+  <child link="T200_v2__3__1"/>
 </joint>
 
-<joint name="topbackleftpropjoint" type="continuous">
-  <origin xyz="0.034649 -0.041252 0.034649" rpy="0 0 0"/>
-  <parent link="T200_5"/>
-  <child link="proptopbackleft_1"/>
-  <axis xyz="0.0 1.0 0.0"/>
+<joint name="Rigid 13" type="fixed">
+  <origin xyz="0.033941 -0.033942 0.224" rpy="0 0 0"/>
+  <parent link="VerticalThrusterBeams_V7_v1_1"/>
+  <child link="ChassisTopPlate_V7_v1_1"/>
 </joint>
 
-<joint name="topbackrightpropjoint" type="continuous">
-  <origin xyz="0.034649 -0.041252 -0.034649" rpy="0 0 0"/>
-  <parent link="T200_2"/>
-  <child link="proptopbackright_1"/>
-  <axis xyz="0.0 1.0 -0.0"/>
+<joint name="FrontRightThrust" type="continuous">
+  <origin xyz="-0.059167 -0.014263 0.0" rpy="0 0 0"/>
+  <parent link="T200_v2__7__1"/>
+  <child link="T200Prop_v1_1"/>
+  <axis xyz="0.707107 -0.707107 -0.0"/>
 </joint>
 
-<joint name="Rigid 28" type="fixed">
-  <origin xyz="-0.233501 -0.204 -0.124993" rpy="0 0 0"/>
-  <parent link="base_link"/>
-  <child link="Ebox_v1_1"/>
+<joint name="BackRightThrust" type="continuous">
+  <origin xyz="-0.0571 0.012196 0.0" rpy="0 0 0"/>
+  <parent link="T200_v2_1"/>
+  <child link="T200Prop_v1__2__1"/>
+  <axis xyz="0.707107 0.707107 0.0"/>
 </joint>
 
-<joint name="Rigid 29" type="fixed">
-  <origin xyz="0.335 -0.204 -0.052862" rpy="0 0 0"/>
-  <parent link="base_link"/>
-  <child link="Rotation_ArmBasePlate_v1_1"/>
+<joint name="BackLeftThrust" type="continuous">
+  <origin xyz="0.057101 0.012196 0.0" rpy="0 0 0"/>
+  <parent link="T200_v2__4__1"/>
+  <child link="T200Prop_v1__1__1"/>
+  <axis xyz="-0.707107 0.707107 0.0"/>
 </joint>
 
-<joint name="Rigid 30" type="fixed">
-  <origin xyz="0.335 -0.204 0.052863" rpy="0 0 0"/>
-  <parent link="base_link"/>
-  <child link="Rotation_ArmBasePlate_v1__1__1"/>
+<joint name="FrontLeftThrust" type="continuous">
+  <origin xyz="0.057101 -0.012196 0.0" rpy="0 0 0"/>
+  <parent link="T200_v2__1__1"/>
+  <child link="T200Prop_v1__3__1"/>
+  <axis xyz="-0.707107 -0.707107 -0.0"/>
 </joint>
 
-<joint name="Rigid 31" type="fixed">
-  <origin xyz="-0.029 0.128 0.003175" rpy="0 0 0"/>
-  <parent link="Rotation_ArmBasePlate_v1_1"/>
-  <child link="PillowBlockMount_v1_1"/>
-</joint>
-
-<joint name="Rigid 32" type="fixed">
-  <origin xyz="-0.061 0.128 -0.003175" rpy="0 0 0"/>
-  <parent link="Rotation_ArmBasePlate_v1__1__1"/>
-  <child link="PillowBlockMount_v1__1__1"/>
-</joint>
-
-<joint name="Rigid 33" type="fixed">
-  <origin xyz="0.533664 -0.003 -0.255002" rpy="0 0 0"/>
-  <parent link="TopPlate_1"/>
-  <child link="V4B_SupportPlate_v1_1"/>
-</joint>
-
-<joint name="shoulderjoint" type="continuous">
-  <origin xyz="0.0 -0.102 -0.003175" rpy="0 0 3.141592653589793"/>
-  <parent link="V4B_SupportPlate_v1_1"/>
-  <child link="shoulder_1"/>
-  <axis xyz="0.0 0.0 -1.0"/>
-</joint>
-
-<joint name="elbowjoint" type="continuous">
-  <origin xyz="-0.2075 0.0 -0.004174" rpy="0 0 -3.141592653589793"/>
-  <parent link="shoulder_1"/>
-  <child link="elbow_1"/>
+<joint name="TFrontRightThrust" type="continuous">
+  <origin xyz="0.034649 0.034648 -0.041252" rpy="0 0 0"/>
+  <parent link="T200_v2__5__1"/>
+  <child link="T200Prop_v1__4__1"/>
   <axis xyz="0.0 -0.0 1.0"/>
 </joint>
 
-<joint name="wristjoint" type="continuous">
-  <origin xyz="0.069 0.006 0.024675" rpy="0 0 0"/>
-  <parent link="elbow_1"/>
-  <child link="wrist_1"/>
+<joint name="TBackRightThrust" type="continuous">
+  <origin xyz="0.034649 -0.034648 -0.041252" rpy="0 0 0"/>
+  <parent link="T200_v2__3__1"/>
+  <child link="T200Prop_v1__5__1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="TBackLeftThrust" type="continuous">
+  <origin xyz="-0.034648 -0.034648 -0.041252" rpy="0 0 0"/>
+  <parent link="T200_v2__6__1"/>
+  <child link="T200Prop_v1__6__1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="TFrontLeftThrust" type="continuous">
+  <origin xyz="-0.034648 0.034648 -0.041252" rpy="0 0 0"/>
+  <parent link="T200_v2__2__1"/>
+  <child link="T200Prop_v1__7__1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="arm0" type="continuous">
+  <origin xyz="0.0 -0.103063 -0.051878" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="igusbearningbase_v1_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="Rigid 23" type="fixed">
+  <origin xyz="0.0 0.0 0.004" rpy="0 0 0"/>
+  <parent link="igusbearningbase_v1_1"/>
+  <child link="igusbearningtop_v1_1"/>
+</joint>
+
+<joint name="Rigid 24" type="fixed">
+  <origin xyz="0.0 0.0 0.016" rpy="0 0 0"/>
+  <parent link="igusbearningbase_v1_1"/>
+  <child link="ArmBasePlate_v1_1"/>
+</joint>
+
+<joint name="Rigid 25" type="fixed">
+  <origin xyz="0.0 0.0875 0.00635" rpy="0 0 0"/>
+  <parent link="ArmBasePlate_v1_1"/>
+  <child link="Arm_Base_Back_Plate_v1_1"/>
+</joint>
+
+<joint name="Rigid 26" type="fixed">
+  <origin xyz="-0.0635 0.037 0.00635" rpy="0 0 0"/>
+  <parent link="ArmBasePlate_v1_1"/>
+  <child link="shoulderJoint_v1_1"/>
+</joint>
+
+<joint name="arm1" type="continuous">
+  <origin xyz="0.003175 -0.089336 0.075" rpy="0 0 0"/>
+  <parent link="shoulderJoint_v1_1"/>
+  <child link="ArmShoulder_v1_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="BevelEnd" type="continuous">
+  <origin xyz="0.037872 0.0 0.034685" rpy="0 0 0"/>
+  <parent link="DifferentialFrame_v1_1"/>
+  <child link="BevelGearTop_v1_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="BevelRight" type="continuous">
+  <origin xyz="0.003175 0.0 0.0" rpy="0 0 0"/>
+  <parent link="DifferentialFrame_v1_1"/>
+  <child link="BevelGearRight_v1_1"/>
   <axis xyz="1.0 -0.0 0.0"/>
 </joint>
 
-<joint name="leftclawjoint" type="continuous">
-  <origin xyz="0.026 0.008 -0.01" rpy="0 0 0"/>
-  <parent link="wrist_1"/>
-  <child link="left_claw_1"/>
-  <axis xyz="0.0 -1.0 0.0"/>
+<joint name="BevelLeft" type="continuous">
+  <origin xyz="0.072569 0.0 0.0" rpy="0 0 0"/>
+  <parent link="DifferentialFrame_v1_1"/>
+  <child link="BevelGearLeft_v1_1"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
 </joint>
 
-<joint name="rightclawjoint" type="continuous">
-  <origin xyz="0.026 0.008 0.01" rpy="0 0 0"/>
-  <parent link="wrist_1"/>
-  <child link="right_claw_1"/>
-  <axis xyz="0.0 -1.0 0.0"/>
-</joint>
-
-<joint name="base_footprint" type="fixed">
-  <origin xyz="0.0 -0.21035 0.0" rpy="0 0 0"/>
+<joint name="ZEDSwivelLink" type="continuous">
+  <origin xyz="0.0 -0.150063 -0.058228" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="basefootprintobject_1"/>
+  <child link="CameraZED_v1_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
 </joint>
 
-<joint name="Rigid 40" type="fixed">
-  <origin xyz="0.0 0.21 0.0" rpy="0 0 0"/>
-  <parent link="VerticalThrusterSupportBeams_1"/>
-  <child link="TopPlate_1"/>
+<joint name="USBCam1(55.127)" type="fixed">
+  <origin xyz="-0.474779 -0.553339 0.000675" rpy="0 0 0"/>
+  <parent link="ChassisTopPlate_V7_v1_1"/>
+  <child link="CameraUSB_v1__1__1"/>
 </joint>
 
-<joint name="Rigid 41" type="fixed">
-  <origin xyz="0.0 0.1145 0.0" rpy="0 0 0"/>
-  <parent link="VerticalThrusterSupportBeams_1"/>
-  <child link="T200_1"/>
+<joint name="USBCam2" type="fixed">
+  <origin xyz="-0.090999 -0.54665 -0.0025" rpy="0 0 0"/>
+  <parent link="ChassisTopPlate_V7_v1_1"/>
+  <child link="CameraUSB_v1_1"/>
+</joint>
+
+<joint name="arm2" type="continuous">
+  <origin xyz="0.104457 -0.14658 0.372175" rpy="0 0 0"/>
+  <parent link="ArmShoulder_v1_1"/>
+  <child link="FrontArm_v1_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="BevelClampJoint" type="continuous">
+  <origin xyz="-0.08509 -0.185475 -0.327472" rpy="0 0 0"/>
+  <parent link="FrontArm_v1_1"/>
+  <child link="DifferentialFrame_v1_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="360camlinkneeds(85mmZ)" type="fixed">
+  <origin xyz="-0.060109 -0.251246 0.00385" rpy="0 0 0"/>
+  <parent link="ChassisTopPlate_V7_v1_1"/>
+  <child link="CameraInsta360_v1_1"/>
+</joint>
+
+<!-- 85mm mount above the Insta360 body link -->
+<link name="insta360_mount_85mm">
+  <inertial>
+    <!-- tiny inertial to avoid “no inertia” / weird physics edge cases -->
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.001"/>
+    <inertia ixx="1e-6" iyy="1e-6" izz="1e-6" ixy="0" ixz="0" iyz="0"/>
+  </inertial>
+</link>
+
+<joint name="insta360_mount_85mm_joint" type="fixed">
+  <parent link="CameraInsta360_v1_1"/>
+  <child link="insta360_mount_85mm"/>
+  <!-- 85mm straight up in Z -->
+  <origin xyz="0 0 0.085" rpy="0 0 0"/>
+</joint>
+
+<!-- Two camera “sensor links” attached at the mount point -->
+<link name="insta360_frontcam_link"/>
+<link name="insta360_backcam_link"/>
+
+<joint name="insta360_frontcam_joint" type="fixed">
+  <parent link="insta360_mount_85mm"/>
+  <child link="insta360_frontcam_link"/>
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+
+<joint name="insta360_backcam_joint" type="fixed">
+  <parent link="insta360_mount_85mm"/>
+  <child link="insta360_backcam_link"/>
+  <!-- flip 180° yaw for the back lens -->
+  <origin xyz="0 0 0" rpy="0 0 3.141592653589793"/>
 </joint>
 
 <joint name="Rigid 42" type="fixed">
-  <origin xyz="0.00898 0.1715 -0.00898" rpy="0 0 0"/>
-  <parent link="VerticalThrusterSupportBeams_1"/>
-  <child link="T200_2"/>
-</joint>
-
-<joint name="Rigid 43" type="fixed">
-  <origin xyz="0.0 0.1145 0.0" rpy="0 0 0"/>
-  <parent link="VerticalThrusterSupportBeams_2"/>
-  <child link="T200_7"/>
-</joint>
-
-<joint name="Rigid 44" type="fixed">
-  <origin xyz="-0.00898 0.1715 -0.00898" rpy="0 0 0"/>
-  <parent link="VerticalThrusterSupportBeams_2"/>
-  <child link="T200_3"/>
-</joint>
-
-<joint name="Rigid 45" type="fixed">
-  <origin xyz="0.0 0.1145 0.0" rpy="0 0 0"/>
-  <parent link="VerticalThrusterSupportBeams_3"/>
-  <child link="T200_8"/>
-</joint>
-
-<joint name="Rigid 46" type="fixed">
-  <origin xyz="-0.00898 0.1715 0.00898" rpy="0 0 0"/>
-  <parent link="VerticalThrusterSupportBeams_3"/>
-  <child link="T200_4"/>
-</joint>
-
-<joint name="Rigid 47" type="fixed">
-  <origin xyz="0.0 0.1145 0.0" rpy="0 0 0"/>
-  <parent link="VerticalThrusterSupportBeams_4"/>
-  <child link="T200_6"/>
-</joint>
-
-<joint name="Rigid 48" type="fixed">
-  <origin xyz="0.00898 0.1715 0.00898" rpy="0 0 0"/>
-  <parent link="VerticalThrusterSupportBeams_4"/>
-  <child link="T200_5"/>
+  <origin xyz="0.0 0.274937 -0.051878" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Ebox_v1_1"/>
 </joint>
 
 </robot>
