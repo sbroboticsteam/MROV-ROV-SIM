@@ -101,6 +101,28 @@
   </plugin>
 </gazebo>
 
+<!-- NEW Encoder Topics -->
+<gazebo>
+  <plugin filename="plugins/libBRT27.so" name="gz::sim::systems::BRT27">
+    <joint>arm0</joint>
+    <joint_name>base</joint_name>
+  </plugin>
+</gazebo>
+
+<gazebo>
+  <plugin filename="plugins/libBRT27.so" name="gz::sim::systems::BRT27">
+    <joint>arm1</joint>
+    <joint_name>prox</joint_name>
+  </plugin>
+</gazebo>
+
+<gazebo>
+  <plugin filename="plugins/libBRT27.so" name="gz::sim::systems::BRT27">
+    <joint>arm2</joint>
+    <joint_name>dist</joint_name>
+  </plugin>
+</gazebo>
+
 <!--Differential Claw System Joints -->
 <gazebo> 
   <plugin

@@ -106,6 +106,25 @@
   gz_type_name: "gz.msgs.Double"
   direction: ROS_TO_GZ
 
+# Encoder topics
+- ros_topic_name: "encoders/base"
+  gz_topic_name: "encoders/base"
+  ros_type_name: "std_msgs/msg/Int32"
+  gz_type_name: "gz.msgs.Int32"
+  direction: "GZ_TO_ROS"
+
+- ros_topic_name: "encoders/prox"
+  gz_topic_name: "encoders/prox"
+  ros_type_name: "std_msgs/msg/Int32"
+  gz_type_name: "gz.msgs.Int32"
+  direction: "GZ_TO_ROS"
+
+- ros_topic_name: "encoders/dist"
+  gz_topic_name: "encoders/dist"
+  ros_type_name: "std_msgs/msg/Int32"
+  gz_type_name: "gz.msgs.Int32"
+  direction: "GZ_TO_ROS"
+
 # Differential Claw Control
 - ros_topic_name: "rov/bevelend"
   gz_topic_name: "bevelend"
